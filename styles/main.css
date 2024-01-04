@@ -1,3 +1,38 @@
+
+
 body{
     font-family: 'Poppins';
+    color:rgb(42 41 85);
+}
+
+.purpText{
+    color:#9f30fd;
+}
+
+/* LANDING PAGE */
+#landingSection{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+}
+
+#landingSection div h1{
+    font-family: 'Kanit';
+    font-size: 100px;
+    line-height: 80px;
+    text-transform: uppercase;
+    color: rgb(42 41 85);
+}
+
+#landingSection div{
+    max-width: 600px;
+}
+
+#landingSection img{
+    width:60vw;
+    max-width: 600px;
 }

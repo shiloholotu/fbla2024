@@ -19,15 +19,16 @@ body{
 /* navbar */
 #navbar{
     display: flex;
-    padding:10px;
+    padding: 10px;
     position: sticky;
     z-index: 99999;
-    top:20px;
-    margin:20px;
-    border:2px solid rgb(0,0,50,0.1);
-    border-radius: 20px;
-    background:rgb(255,255,255,0.85);
+    top: 0;
+    /* margin: 20px; */
+    border-bottom: 2px solid rgb(0,0,50,0.1);
+    /* border-radius: 20px; */
+    background: rgb(255,255,255,0.85);
     backdrop-filter: blur(8px);
+    padding-left: 40px;
 }
 
 .logo{
@@ -40,9 +41,9 @@ body{
     margin:0;
 }
 .logo img{
-    width: 70px;
+    width: 50px;
     vertical-align: middle;
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 
@@ -83,9 +84,9 @@ body{
 
 .featureTag img{
     background: linear-gradient(45deg, #ce4efd, #8830fd);
-    width: 30px;
-    padding: 10px;
-    border-radius: 15px;
+    width: 25px;
+    padding: 5px;
+    border-radius: 12px;
     vertical-align: middle;
     margin-right: 12px;
 }
@@ -93,15 +94,14 @@ body{
 .featureTag{
     display: block;
     width: fit-content;
-    padding: 10px;
+    padding: 7px;
     padding-right: 30px;
     border:2px solid rgb(0,0,50,0.1);
     font-size: 20px;
     font-weight: 600;
     margin-right: 15px;
     margin-left: 15px;
-    border-radius: 25px;
-    color:rgb(42 41 85 / 68%);
+    border-radius: 20px;
     background:rgb(255,255,255,0.7);
     backdrop-filter: blur(10px);
 }

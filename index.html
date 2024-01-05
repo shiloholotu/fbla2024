@@ -14,21 +14,41 @@
         <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&family=Share+Tech&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="styles/main.css">
+
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         
         <title>FBLA</title>
          
     </head>
     
     <body>
-        
-        
+
+        <div id="navbar">
+            <a class="logo" href="index.html"><img src="assets/logo.png">singularity.ai</a>
+        </div>
+
         <div id="landingSection">
             <div>
-                <h1>The power of AI, <span class='purpText'>at your fingertips.</span></h1>
+                <h1 id="aiText">The power of AI, <span class='purpText'>at your fingertips.</span></h1>
             </div>
-            <img src="assets/head.png">
+            <img id="aiHead" src="assets/hand.png">
         </div>
+
+        <div id="tagHolder">
+            <div class="featureTag"><img src="assets/svg/camera.svg">Images</div>
+            <div class="featureTag"><img src="assets/svg/text.svg">Text</div>
+            <div class="featureTag"><img src="assets/svg/headset.svg">Music</div>
+            <div class="featureTag"><img src="assets/svg/code.svg">Coding</div>
+        </div>
+
+        <div style="height: 100vh;"></div>
+
+        <script src="scripts/effects.js"></script>
         <script src="scripts/app.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
         
     </body>
     

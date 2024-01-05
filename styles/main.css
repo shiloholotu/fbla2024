@@ -1,13 +1,51 @@
 
-
+:root{
+    --main-purple:#9f30fd;
+    --font-color:rgb(42,41,85);
+}
 body{
     font-family: 'Poppins';
-    color:rgb(42 41 85);
+    color:var(--font-color);
+    margin:0;
 }
+
 
 .purpText{
     color:#9f30fd;
 }
+
+/* GENERAL */
+
+/* navbar */
+#navbar{
+    display: flex;
+    padding:10px;
+    position: sticky;
+    z-index: 99999;
+    top:20px;
+    margin:20px;
+    border:2px solid rgb(0,0,50,0.1);
+    border-radius: 20px;
+    background:rgb(255,255,255,0.85);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 10px 100px rgb(0,0,50,0.07);
+}
+
+.logo{
+    font-weight: 600;
+    font-size: 1.5em;
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    color:var(--font-color);
+    margin:0;
+}
+.logo img{
+    width: 70px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
 
 /* LANDING PAGE */
 #landingSection{
@@ -17,7 +55,7 @@ body{
     align-items: center;
     width: 80%;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 #landingSection div h1{
@@ -35,4 +73,36 @@ body{
 #landingSection img{
     width:60vw;
     max-width: 600px;
+}
+
+/* features */
+
+#tagHolder{
+    display: flex;
+    justify-content: center;
+}
+
+.featureTag img{
+    background: linear-gradient(45deg, #ce4efd, #8830fd);
+    width: 30px;
+    padding: 10px;
+    border-radius: 15px;
+    vertical-align: middle;
+    margin-right: 12px;
+}
+
+.featureTag{
+    display: block;
+    width: fit-content;
+    padding: 10px;
+    padding-right: 30px;
+    border:2px solid rgb(0,0,50,0.1);
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 15px;
+    margin-left: 15px;
+    border-radius: 25px;
+    color:rgb(42 41 85 / 68%);
+    background:rgb(255,255,255,0.7);
+    backdrop-filter: blur(10px);
 }

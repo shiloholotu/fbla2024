@@ -17,7 +17,7 @@
 
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         
-        <title>Singularity | The power of AI at your fingertips</title>
+        <title>Try It Out | Singularity</title>
          
     </head>
     
@@ -28,11 +28,10 @@
         </div>
 
         <div id="landingSection" data-aos="fade-in" data-aos-duration="700" data-aos-delay="400">
-            <div id="aiText">
-                <h1>The power of AI, <span class='purpText'>at your fingertips.</span></h1>
-                <p>Cutting-edge AI-powered services to maximize creativity and productivity.</p>
+            <div style="max-width: unset;text-align: center;">
+                <h1>Still skeptical?<br><span class='purpText'>try it out!</span></h1>
+                <p>Explore the versatility of Singularity's services in this free-to-use demo.</p>
             </div>
-            <img id="aiHead" src="static/assets/hand.png">
         </div>
 
         
@@ -46,20 +45,18 @@
 
         <div class="gap"></div>
 
-        <div class="textImageBlurb">
-            <img src="static/assets/mona.png">
-            <div>
-                <h1>Unleash Your Artistic <span class="purpText">Creativity.</span></h1>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy
-                    text ever since the scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting
-                    industry. Lorem Ipsum has been the industry’s standard dummy text ever since the scrambled it to make a type specimen book.Lorem
-                    Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever
-                    since the scrambled it to make a type specimen book.
-                </p>
-            </div>
+        
+        <div class="demoPrompt">
+            <p class="dropdown" id="demoType"><span id="demoTypeText">Generate an image of</span></p>
+            <p class="dropdown" id="imageSubject"><span id="imageSubjectText"> Santa Claus</span></p>
+            <p class="dropdown" id="imageVerb"><span id="imageVerbText"> riding a skateboard</span></p>
         </div>
 
-        <script src="static/scripts/effects.js"></script>
+        <div id="demoSpace">
+            <img src="static/assets/ai-pics/santa/skateboard/0.png">
+        </div>
+
+
         <script src="static/scripts/app.js"></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>

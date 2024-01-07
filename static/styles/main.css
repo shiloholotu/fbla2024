@@ -155,3 +155,37 @@ body{
     backdrop-filter: blur(10px);
 }
 
+
+
+/* TRY IT OUT PAGE */
+
+/* drop downs */
+.demoPrompt{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.dropdown{
+    width: fit-content;
+    margin: 0;
+    padding: 7px;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 2px solid rgb(0,0,50,0.1);
+    border-radius: 15px;
+    border-bottom: 2px solid #9f30fd73;
+}
+
+/* demo space */
+#demoSpace img{
+    width: 80%;
+    max-width: 600px;
+    border-radius: 20px;
+    display: block;
+    margin: auto;
+    border: 5px solid;
+    box-shadow: 0 20px 50px rgb(0,0,50,0.3);
+}

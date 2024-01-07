@@ -16,6 +16,46 @@ body{
 
 /* GENERAL */
 
+/* gaps */
+.gap{
+    height: 20vh;
+}
+
+/* text image blurb */
+.textImageBlurb{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+
+
+.textImageBlurb div h1{
+    font-family: 'Kanit';
+    font-size: 70px;
+    line-height: 70px;
+    text-transform: uppercase;
+    color: rgb(42 41 85);
+}
+
+.textImageBlurb div{
+    max-width: 600px;
+}
+
+.textImageBlurb img{
+    width:60vw;
+    max-width: 600px;
+    transition: 1s;
+}
+
+.textImageBlurb img:hover{
+    transform: perspective(400px) rotateY(2deg) rotateX(-2deg);
+    
+}
+
+
 /* navbar */
 #navbar{
     display: flex;
@@ -56,6 +96,7 @@ body{
     width: 80%;
     margin: auto;
     margin-top: 80px;
+    margin-bottom:50px;
 }
 
 #landingSection div h1{
@@ -64,6 +105,14 @@ body{
     line-height: 80px;
     text-transform: uppercase;
     color: rgb(42 41 85);
+    margin-bottom:30px;
+}
+
+#landingSection div p{
+    font-size: 20px;
+    margin:0;
+    font-weight: 600;
+    opacity: .6;
 }
 
 #landingSection div{
@@ -105,3 +154,4 @@ body{
     background:rgb(255,255,255,0.7);
     backdrop-filter: blur(10px);
 }
+

@@ -48,6 +48,7 @@ body{
     width:60vw;
     max-width: 600px;
     transition: 1s;
+    margin-right: 40px;
 }
 
 .textImageBlurb img:hover{
@@ -101,8 +102,8 @@ body{
 
 #landingSection div h1{
     font-family: 'Kanit';
-    font-size: 100px;
-    line-height: 80px;
+    font-size: min(100px,7vw);
+    line-height: 80%;
     text-transform: uppercase;
     color: rgb(42 41 85);
     margin-bottom:30px;
@@ -111,7 +112,6 @@ body{
 #landingSection div p{
     font-size: 20px;
     margin:0;
-    font-weight: 600;
     opacity: .6;
 }
 

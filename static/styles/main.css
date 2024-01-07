@@ -164,12 +164,12 @@ body{
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
+    margin-top:60px;
 }
 .dropdown{
     width: fit-content;
     margin: 0;
     padding: 7px;
-    padding-right: 15px;
     padding-left: 15px;
     font-size: 20px;
     margin-left: 5px;
@@ -177,6 +177,21 @@ body{
     border: 2px solid rgb(0,0,50,0.1);
     border-radius: 15px;
     border-bottom: 2px solid #9f30fd73;
+    transition: .25s;
+    cursor: pointer;
+}
+
+.dropdown:hover{
+    transform: translate(0,-5px);
+}
+
+.dropdown img{
+    background: linear-gradient(45deg, #ce4efd, #8830fd);
+    width: 20px;
+    padding: 5px;
+    border-radius: 12px;
+    vertical-align: middle;
+    margin-left: 12px;
 }
 
 /* demo space */

@@ -21,8 +21,35 @@ body{
     height: 20vh;
 }
 
-/* text image blurb */
-.textImageBlurb{
+/* slideshow*/
+
+#slideControls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:30px;
+}
+
+#slideControls img{
+    background: var(--main-purple);
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+.slideDot{
+    width: 15px;
+    height: 15px;
+    background-color: var(--main-purple);
+    border-radius: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: .5s;
+    cursor: pointer;
+}
+
+#slideshow{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -32,7 +59,7 @@ body{
 
 
 
-.textImageBlurb div h1{
+#slideshow div h1{
     font-family: 'Kanit';
     font-size: 70px;
     line-height: 70px;
@@ -40,21 +67,16 @@ body{
     color: rgb(42 41 85);
 }
 
-.textImageBlurb div{
+#slideshow div{
     max-width: 600px;
 }
 
-.textImageBlurb img{
+#slideshow img{
     width:60vw;
     max-width: 600px;
-    transition: 1s;
     margin-right: 40px;
 }
 
-.textImageBlurb img:hover{
-    transform: perspective(400px) rotateY(2deg) rotateX(-2deg);
-    
-}
 
 
 /* navbar */
@@ -171,18 +193,21 @@ body{
     margin: 0;
     padding: 7px;
     padding-left: 15px;
-    font-size: 20px;
-    margin-left: 5px;
-    margin-right: 5px;
-    border: 2px solid rgb(0,0,50,0.1);
-    border-radius: 15px;
+    padding-right: 15px;
+    font-size: 18px;
+    margin-right: 10px;
+    border: 2px solid #5030fd73;
+    border-top: 2px solid #3036fd73;
     border-bottom: 2px solid #9f30fd73;
+    border-radius: 15px;
     transition: .25s;
     cursor: pointer;
+    text-align: center;
+    
 }
 
 .dropdown:hover{
-    transform: translate(0,-5px);
+    transform: translate(0,-2px);
 }
 
 .dropdown img{
@@ -194,6 +219,26 @@ body{
     margin-left: 12px;
 }
 
+#genButton{
+    padding: 7px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 18px;
+    font-family: 'Poppins';
+    background: linear-gradient(45deg, #ce4efd, #8830fd);
+    border-radius: 15px;
+    border: none;
+    transition: .25s;
+    cursor: pointer;
+    color: white;
+    box-shadow: 0 0 50px #9f30fda3;
+}
+
+#genButton:hover{
+    transform: translate(0,-2px);
+}
+
+
 /* demo space */
 #demoSpace img{
     width: 80%;
@@ -204,3 +249,12 @@ body{
     border: 5px solid;
     box-shadow: 0 20px 50px rgb(0,0,50,0.3);
 }
+
+
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-family: 'Poppins';
+    outline: none;
+  }

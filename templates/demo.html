@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        <meta charset="UTF-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css?family=Poppins:400,600,800" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&family=Share+Tech&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="static/styles/main.css">
+
+         <!-- Animate on Scroll -->
+         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+         <!-- Jquery -->
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+         <!-- Preload ai images-->
+         <link rel="preload" as="image" href="static/assets/ai-pics/apple/skateboard/0.png">
+         <link rel="preload" as="image" href="static/assets/ai-pics/apple/skateboard/1.png">
+         <link rel="preload" as="image" href="static/assets/ai-pics/apple/skateboard/2.png">
+         <link rel="preload" as="image" href="static/assets/ai-pics/apple/skateboard/3.png">
+
+         <link rel="preload" as="image" href="static/assets/ai-pics/apple/beach/0.png">
+         <link rel="preload" as="image" href="static/assets/ai-pics/apple/beach/1.png">
+         <link rel="preload" as="image" href="static/assets/ai-pics/apple/beach/2.png">
+         <link rel="preload" as="image" href="static/assets/ai-pics/apple/beach/3.png">
+
+         <link rel="preload" as="image" href="static/assets/ai-pics/apple/textbook/0.png">
+         <link rel="preload" as="image" href="static/assets/ai-pics/apple/textbook/1.png">
+         <link rel="preload" as="image" href="static/assets/ai-pics/apple/textbook/2.png">
+         <link rel="preload" as="image" href="static/assets/ai-pics/apple/textbook/3.png">
+
+         <link rel="preload" as="image" href="static/assets/ai-pics/cat/skateboard/0.png">
+         <link rel="preload" as="image" href="static/assets/ai-pics/cat/skateboard/1.png">
+         <link rel="preload" as="image" href="static/assets/ai-pics/cat/skateboard/2.png">
+         <link rel="preload" as="image" href="static/assets/ai-pics/cat/skateboard/3.png">
+
+         <link rel="preload" as="image" href="static/assets/ai-pics/cat/beach/0.png">
+         <link rel="preload" as="image" href="static/assets/ai-pics/cat/beach/1.png">
+         <link rel="preload" as="image" href="static/assets/ai-pics/cat/beach/2.png">
+         <link rel="preload" as="image" href="static/assets/ai-pics/cat/beach/3.png">
+
+         <link rel="preload" as="image" href="static/assets/ai-pics/cat/textbook/0.png">
+         <link rel="preload" as="image" href="static/assets/ai-pics/cat/textbook/1.png">
+         <link rel="preload" as="image" href="static/assets/ai-pics/cat/textbook/2.png">
+         <link rel="preload" as="image" href="static/assets/ai-pics/cat/textbook/3.png">
+
+         <link rel="preload" as="image" href="static/assets/ai-pics/santa/skateboard/0.png">
+         <link rel="preload" as="image" href="static/assets/ai-pics/santa/skateboard/1.png">
+         <link rel="preload" as="image" href="static/assets/ai-pics/santa/skateboard/2.png">
+         <link rel="preload" as="image" href="static/assets/ai-pics/santa/skateboard/3.png">
+
+         <link rel="preload" as="image" href="static/assets/ai-pics/santa/beach/0.png">
+         <link rel="preload" as="image" href="static/assets/ai-pics/santa/beach/1.png">
+         <link rel="preload" as="image" href="static/assets/ai-pics/santa/beach/2.png">
+         <link rel="preload" as="image" href="static/assets/ai-pics/santa/beach/3.png">
+
+         <link rel="preload" as="image" href="static/assets/ai-pics/santa/textbook/0.png">
+         <link rel="preload" as="image" href="static/assets/ai-pics/santa/textbook/1.png">
+         <link rel="preload" as="image" href="static/assets/ai-pics/santa/textbook/2.png">
+         <link rel="preload" as="image" href="static/assets/ai-pics/santa/textbook/3.png">
+
+        <title>Try It Out | Singularity</title>
+         
+    </head>
+    
+    <body>
+
+        <div id="navbar">
+            <a class="logo" href="index.html"><img src="static/assets/logo.png">singularity</a>
+        </div>
+
+        <div id="landingSection" data-aos="fade-in" data-aos-duration="700" data-aos-delay="400">
+            <div style="max-width: unset;text-align: center;">
+                <h1>Still skeptical?<br><span class='purpText'>try it out!</span></h1>
+                <p>Explore the versatility of Singularity's services in this free-to-use demo.</p>
+            </div>
+        </div>
+
+        
+        <div class="demoPrompt">
+            <select class="dropdown" id="genInput1" onchange="updateDropdowns()">
+                <option value="image"selected>Generate an image</option>
+                <option value="essay">Write an essay</option>
+                <option value="function">Code a function</option>
+            </select>
+
+            <select class="dropdown" id="genInput2">
+                <option value="cat"selected>of a cat</option>
+                <option value="santa">of Santa Claus</option>
+                <option value="apple">of an apple</option>
+            </select>
+
+            <select class="dropdown" id="genInput3">
+                <option value="skateboard"selected>riding a skateboard</option>
+                <option value="beach">relaxing on the beach</option>
+                <option value="textbook">reading a textbook</option>
+            </select>
+
+            <button id="genButton" onclick="generateDemo()">Generate</button>
+        </div>
+
+        <div id="demoSpace">
+            <img src="static/assets/ai-pics/cat/skateboard/0.png">
+        </div>
+
+        <div class="gap"></div>
+
+        <script src="static/scripts/demo.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+        
+    </body>
+    
+</html>

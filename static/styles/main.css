@@ -144,38 +144,20 @@ body{
     max-width: 600px;
 }
 
-/* features */
-
-#tagHolder{
-    display: flex;
-    justify-content: center;
-}
-
-.featureTag img{
-    background: linear-gradient(45deg, #ce4efd, #8830fd);
-    width: 25px;
-    padding: 5px;
-    border-radius: 12px;
-    vertical-align: middle;
-    margin-right: 12px;
-}
-
-.featureTag{
+#getStarted{
+    font-family: 'Poppins';
+    text-decoration: none;
+    color: white;
+    padding: 12px;
     display: block;
     width: fit-content;
-    padding: 7px;
-    padding-right: 30px;
-    border:2px solid rgb(0,0,50,0.1);
     font-size: 20px;
-    font-weight: 600;
-    margin-right: 15px;
-    margin-left: 15px;
     border-radius: 20px;
-    background:rgb(255,255,255,0.7);
-    backdrop-filter: blur(10px);
+    padding-left: 30px;
+    padding-right: 30px;
+    background: var(--font-color);
+    margin-top:40px;
 }
-
-
 
 /* TRY IT OUT PAGE */
 

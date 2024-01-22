@@ -23,5 +23,13 @@ def data():
 def risk():
     return render_template("risk.html")
 
+@app.route("/careers")
+def careers():
+    return render_template("careers.html")
+
+@app.route("/application")
+def application():
+    return render_template("application.html")
+
 if __name__ == "__main__":
     app.run(debug=True)

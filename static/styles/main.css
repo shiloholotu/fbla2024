@@ -3,6 +3,10 @@
     --main-purple:#9f30fd;
     --font-color:rgb(42,41,85);
 }
+
+html {
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Poppins';
     color:var(--font-color);
@@ -299,7 +303,7 @@ select {
   }
 
 
-/* JOB LISTING PAGE */
+/* JOB LISTING PAGES */
 .jobStuff {
     justify-content: left;
     align-items: center;
@@ -325,6 +329,10 @@ select {
     margin:0;
 }
 
+.jobStuff .backto {
+    color: var(--font-color);
+}
+
 .jobStuff .salaryrange{
     font-weight: bold;
     margin-bottom: 5px;
@@ -334,19 +342,177 @@ select {
     margin-bottom: 5vh;
 }
 
-.jobStuff button {
+.jobStuff .apply {
     font-family: 'Poppins';
-    font-weight: bold;
-    font-size: 16px;
-    transition-duration: 0.2s;
-    padding: 10px;
+    text-decoration: none;
+    padding: 12px;
+    display: block;
+    width: fit-content;
+    font-size: 20px;
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: var(--font-color);
+    color: white;
+}
+
+
+/* MAIN CAREERS PAGE */
+#careerHeader{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom:50px;
+}
+
+#careerHeader h1{
+    font-family: 'Kanit';
+    font-size: min(100px,7vw);
+    line-height: 80%;
+    text-transform: uppercase;
+    color: rgb(42 41 85);
+    margin-bottom:30px;
+    text-align: center;
+}
+
+#careerHeader p{
+    text-align: center;
+    font-size: 20px;
+    margin:0;
+    opacity: .8;
+}
+
+#careerHeader a {
+    text-align: center;
+    opacity: 1;
     color: var(--main-purple);
-    background-color: white;
-    border: 1px solid var(--main-purple);
-    border-radius: 5px;
+    font-family: "Poppins";
+}
+#careerHeader a:visited{
+    color: var(--main-purple);   
+}
+
+#careerHeader div{
+    width: min(800px,80%);
+}
+
+.companyInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom:30px;
+}
+
+.companyInfo h1{
+    font-family: 'Kanit';
+    font-size: min(50px,7vw);
+    line-height: 80%;
+    color: rgb(42 41 85);
+    margin-bottom:30px;
+    text-align: left;
+}
+
+.companyInfo p{
+    font-size: 20px;
+    margin:0;
+    opacity: .8;
+}
+
+.companyInfo hr{
+    opacity: 0.6;
+    margin-top: 2vh;
     margin-bottom: 2vh;
 }
-.jobStuff button:hover{
-    background-color: var(--main-purple);
-    color: white;
+
+.companyInfo div{
+    min-width: 100%;
+}
+
+#openPositions {
+    width: 90%;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom:30px;
+}
+
+#openPositions h1 {
+    font-family: 'Kanit';
+    font-size: min(50px,7vw);
+    line-height: 80%;
+    color: rgb(42 41 85);
+    margin-bottom:30px;
+    text-align: left;
+}
+
+#openPositions p{
+    font-size: 20px;
+    margin:0;
+    opacity: .8;
+}
+
+#openPositions hr{
+    opacity: 0.6;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.listing {
+    display: flex;
+    justify-content: space-between;
+}
+
+.listing .left-align {
+    display: inline-block;
+    text-align: left;
+    font-weight: bold;
+}
+
+.listing .right-align {
+    display: inline-block;
+    text-align: right;
+}
+
+#openPositions a {
+    opacity: 1;
+    color: var(--font-color);
+    font-family: "Poppins";
+}
+#openPositions a:visited{
+    color: var(--font-color);   
+}
+
+#benefits {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 85%;
+    margin: auto;
+    margin-bottom:30px;
+}
+
+#benefits div{
+    padding: 5px 20px;
+    width: 33%;
+}
+#benefits strong{
+    font-size: 20px;
+    margin: 0;
+}
+
+#benefits ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#benefits li::before{
+    content: "\2713";
+    display: inline-block;
+    width: 1.5em;
 }

@@ -302,7 +302,6 @@ select {
     outline: none;
   }
 
-
 /* JOB LISTING PAGES */
 .jobStuff {
     justify-content: left;
@@ -515,4 +514,8 @@ select {
     content: "\2713";
     display: inline-block;
     width: 1.5em;
+}
+
+@media only screen and (max-width: 950px) {
+
 }

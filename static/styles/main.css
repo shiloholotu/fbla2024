@@ -6,7 +6,6 @@
 body{
     font-family: 'Poppins';
     color:var(--font-color);
-    margin:0;
 }
 
 
@@ -298,3 +297,56 @@ select {
     font-family: 'Poppins';
     outline: none;
   }
+
+
+/* JOB LISTING PAGE */
+.jobStuff {
+    justify-content: left;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom:50px;
+}
+
+.jobStuff h1{
+    font-family: 'Kanit';
+    font-size: min(100px,6vw);
+    line-height: 80%;
+    color: rgb(42 41 85);
+    margin-bottom:30px;
+}
+
+.jobstuff h2 {
+    font-weight: lighter;
+}
+
+.jobStuff p{
+    margin:0;
+}
+
+.jobStuff .salaryrange{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.jobStuff .paragraph {
+    margin-bottom: 5vh;
+}
+
+.jobStuff button {
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 16px;
+    transition-duration: 0.2s;
+    padding: 10px;
+    color: var(--main-purple);
+    background-color: white;
+    border: 1px solid var(--main-purple);
+    border-radius: 5px;
+    margin-bottom: 2vh;
+}
+.jobStuff button:hover{
+    background-color: var(--main-purple);
+    color: white;
+}

@@ -1,5 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-app.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyC5nGCvCiTjJ7wloofHDkoxTulY1Cp9mm4",
+      authDomain: "singularity-a772b.firebaseapp.com",
+      projectId: "singularity-a772b",
+      storageBucket: "singularity-a772b.appspot.com",
+      messagingSenderId: "1018192054461",
+      appId: "1:1018192054461:web:dec9874a097cd5865acfd4"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+  </script>
+  
     <head>
         
         <meta charset="UTF-8">
@@ -30,7 +51,7 @@
     <body>
 
         <div id="navbar">
-            <a class="logo" href="index.html"><img src="static/assets/logo.png">singularity</a>
+            <a class="logo" href="/"><img src="static/assets/logo.png">singularity</a>
         </div>
 
 
@@ -38,7 +59,7 @@
             <div id="landingSection">
                 <div id="aiText">
                     <h1>The power of AI, <span class='purpText'>at your fingertips.</span></h1>
-                    <p>Here at singularity, we provide Cutting-edge AI-powered services to maximize creativity and productivity through text, image, and code generation.</p>
+                    <p>Here at singularity, we provide cutting-edge AI-powered services to maximize creativity and productivity through text, image, and code generation.</p>
                     <a id="getStarted" href="/demo">Get Started</a>
                 </div>
                 <img id="aiHead" src="static/assets/hand.png">

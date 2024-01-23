@@ -10,6 +10,7 @@ html {
 body{
     font-family: 'Poppins';
     color:var(--font-color);
+    margin:0;
 }
 
 
@@ -234,6 +235,15 @@ body{
     box-shadow: 0 20px 50px rgb(0,0,50,0.3);
 }
 
+/* demo code generation */
+#demoSpace code{
+    width: 80%;
+    max-width: 800px;
+    border-radius: 20px;
+    margin: auto;
+    font-size: 16px;
+}
+
 /* demo text generation */
 
 #demoSpace div{
@@ -270,37 +280,35 @@ body{
     opacity: .65;
 }
 
+
+/* SCROLL BAR */
 /* width */
-#demoSpace div p::-webkit-scrollbar {
+#demoSpace div p::-webkit-scrollbar , #demoSpace code::-webkit-scrollbar{
 	margin-left: 5px;
     margin-right: 5px;
  	width: 10px;
 }
 
 /* Track */
-#demoSpace div p::-webkit-scrollbar-track {
+#demoSpace div p::-webkit-scrollbar-track, #demoSpace code::-webkit-scrollbar-track  {
   background-color: transparent;
 }
  
 /* Handle */
-#demoSpace div p::-webkit-scrollbar-thumb {
+#demoSpace div p::-webkit-scrollbar-thumb, #demoSpace code::-webkit-scrollbar-thumb {
   background: rgba(0,0,0,0.2); 
   border-radius: 10px;
   transition: .25s;
 }
 
-/* Handle on hover */
-#demoSpace div p::-webkit-scrollbar-thumb:hover {
-  background: rgba(0,0,0,0.); 
-}
-
+#demoSpace code::-webkit-scrollbar-thumb {background:rgba(255,255,255,0.2);}
 
 select {
     -webkit-appearance: none;
     -moz-appearance: none;
     font-family: 'Poppins';
     outline: none;
-  }
+}
 
 /* JOB LISTING PAGES */
 .jobStuff {
@@ -353,6 +361,44 @@ select {
     padding-right: 30px;
     background: var(--font-color);
     color: white;
+}
+
+/* REVIEWS */
+.review{
+    display: flex;
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    border-radius: 15px;
+    border: 2px solid rgb(0,0,50,0.15);
+    padding: 10px;
+    align-items: center;
+    border-radius: 100px;
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 20px rgb(0,0,50,0.1);
+}
+
+.reviewFace{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.review h3{
+    font-weight: 600;
+    margin:0;
+    margin-top: 5px;
+}
+
+.review p{
+    margin:0;
+}
+
+.reviewStar{
+    width: 25px;
+    margin-right: 5px;
+    opacity: .35;
 }
 
 

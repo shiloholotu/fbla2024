@@ -503,3 +503,142 @@ const essays = {
         ]
     }
 }
+
+
+const codes = {
+    "sort":{
+        "py":
+`def sort_list(lst):
+
+    sorted = False
+    while not sorted:
+        sorted = True
+        # look through all adjacent pairs
+        for i in range(len(lst)-1):
+            # if an adjacent pair isn't sorted
+            if(lst[i] > lst[i+1]):
+                # swap elements
+                temp = lst[i]
+                lst[i] = lst[i+1]
+                lst[i+1] = temp
+                # mark as unsorted
+                sorted = False`,
+        "js":
+`function sort_list(lst){
+    let sorted = false;
+    while(!sorted){
+        sorted = true;
+        // look through all adjacent pairs
+        for(let i = 0; i < lst.length-1; i++){
+            // if an adjacent pair isn't sorted
+            if(lst[i] > lst[i+1]){
+                // swap elements
+                let temp = lst[i];
+                lst[i] = lst[i+1];
+                lst[i+1] = temp;
+                sorted = false;
+            }
+        }
+    }
+}`,
+        "java":
+`public class SortList {
+    public static void sortList(int[] arr) {
+        boolean sorted = false;
+        while (!sorted) {
+            sorted = true;
+            // Look through all adjacent pairs
+            for (int i = 0; i < arr.length - 1; i++) {
+                // If an adjacent pair isn't sorted
+                if (arr[i] > arr[i + 1]) {
+                    // Swap elements
+                    int temp = arr[i];
+                    arr[i] = arr[i + 1];
+                    arr[i + 1] = temp;
+                    // Mark as unsorted
+                    sorted = false;
+                }
+            }
+        }
+    }
+}`
+    },
+    "quad":{
+        "py":
+`import cmath  # Importing cmath for handling complex numbers
+
+def solve_quadratic(a, b, c):
+    # Calculate the discriminant
+    discriminant = cmath.sqrt(b**2 - 4*a*c)
+
+    # Calculate the two solutions using the quadratic formula
+    root1 = (-b + discriminant) / (2 * a)
+    root2 = (-b - discriminant) / (2 * a)
+
+    return root1, root2`,
+        "js":
+`function solveQuadratic(a, b, c) {
+    // Calculate the discriminant
+    const discriminant = Math.sqrt(b ** 2 - 4 * a * c);
+  
+    // Calculate the two solutions using the quadratic formula
+    const root1 = (-b + discriminant) / (2 * a);
+    const root2 = (-b - discriminant) / (2 * a);
+  
+    return [root1, root2];
+}`,
+        "java":
+`public class QuadraticSolver {
+    public static double[] solveQuadratic(double a, double b, double c) {
+        // Calculate the discriminant
+        double discriminant = Math.sqrt(b * b - 4 * a * c);
+
+        // Check if the roots are real or complex
+        if (Double.isNaN(discriminant)) {
+            // Complex roots
+            return new double[]{Double.NaN, Double.NaN};
+        } else {
+            // Real roots
+            double root1 = (-b + discriminant) / (2 * a);
+            double root2 = (-b - discriminant) / (2 * a);
+            return new double[]{root1, root2};
+        }
+    }
+}`
+    },
+    "vowel":{
+        "py":
+`def count_vowels(word):
+    vowels = "aeiouAEIOU"
+    count = 0
+    for char in word:
+        if char in vowels:
+            count += 1
+    return count`,
+        "js":
+`function countVowels(word) {
+    const vowels = "aeiouAEIOU";
+    let count = 0;
+    for (const char of word) {
+        if (vowels.includes(char)) {
+            count++;
+        }
+    }
+    return count;
+}`,
+        "java":
+`public class VowelCounter {
+    public static int countVowels(String word) {
+        String vowels = "aeiouAEIOU";
+        int count = 0;
+        for (int i = 0; i < word.length(); i++) {
+            char ch = word.charAt(i);
+            if (vowels.indexOf(ch) != -1) {
+                count++;
+            }
+        }
+        return count;
+    }
+}`
+    }
+}

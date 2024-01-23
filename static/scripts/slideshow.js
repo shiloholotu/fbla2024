@@ -19,8 +19,8 @@ const slides = [
         since the scrambled it to make a type specimen book.`
     ],
     [
-        "Unleash your artistic <span class='purpText'>Creativity.</span>",
-        "mona.png",
+        "Programming <span class='purpText'>Made Easy.</span>",
+        "code.png",
         `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy
         text ever since the scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting
         industry. Lorem Ipsum has been the industry’s standard dummy text ever since the scrambled it to make a type specimen book.Lorem

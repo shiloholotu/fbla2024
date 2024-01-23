@@ -516,6 +516,70 @@ select {
     width: 1.5em;
 }
 
+
+/* THE ACTUAL APPLICATION PAGE */
+
+.application {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom:30px;
+}
+
+.application div {
+    width: min(800px,80%);
+}
+
+.application input {
+    display:block;
+    font-family: "Poppins";
+    margin-bottom: 3vh;
+    width: 100%;
+    height: 20px;
+}
+
+label {
+    display:block;
+    margin-bottom: 1vh;
+    line-height: 1.8;
+}
+
+.application input[type="file"] {
+    padding-bottom: 5px;
+    font-family: "Poppins";
+}
+
+.application input[type="submit"]{
+    margin:auto;
+    display: flex;
+    height: fit-content;
+    font-family: 'Poppins';
+    text-decoration: none;
+    padding: 12px;
+    width: fit-content;
+    font-size: 20px;
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: var(--font-color);
+    color: white;
+}
+
+.application .subtitle {
+    opacity: 0.6;
+}
+
+.application textarea {
+    margin-top: 15px;
+    margin-bottom: 3vh;
+    width: 100%;
+    height: 15vh;
+}
+
+
 @media only screen and (max-width: 950px) {
 
 }

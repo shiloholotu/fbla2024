@@ -35,7 +35,76 @@
 
 
         <div data-aos="fade-in" data-aos-duration="700">
-            <h1>work in progress lol</h1>
+            <div class="application">
+                <div>
+                    <h1>Apply to Singularity</h1>
+                    <p class="subtitle">Questions marked with a * are required.</p>
+                    <form>
+                        <label for="joblist">What job are you applying to?</label>
+                        <input list="joblist" name="joblist" placeholder="Please select option">
+                        <datalist id="joblist">
+                            <option value="Hardware/Software Co-Design Engineer">
+                            <option value="Applied AI Product Data Scientist">
+                            <option value="Insider Risk Investigator">
+                        </datalist>
+
+                        <label for="firstname">First Name *</label>
+                        <input type="text" id="firstname" name="firstname" placeholder="Ex: John" required>
+
+                        <label for="lastname">Last Name *</label>
+                        <input type="text" id="lastname" name="lastnme" placeholder="Ex: Doe" required>
+
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" placeholder="Ex: JohnDoe@email.com" required>
+
+                        <label for="phone">Phone</label>
+                        <input type="text" id="phone" name="phone" placeholder="Ex: (888) 888-8888">
+
+                        <label for="resume">Resume/CV *<br><span class="subtitle">(Preferred file types: pdf, doc, docx, txt, rtf)</span></label>
+                        <input type="file" id="resume" name="resume" required>
+
+                        <hr>
+
+                        <br><label for="outreach">How did you hear about Singularity?</label>
+                        <input type="text" id="outreach" name="outreach">
+
+                        <label for="startdate">When can you start a new role? *</label>
+                        <input type="text" id="startdate" name="startdate" required>
+
+                        <label for="immigration">Do you now or will you in the future require visa sponsorship to continue working in the United Kingdom? *<br><span class="subtitle">We provide immigration and sponsorship support to employees based on unique circumstances.</span></label>
+                        <input list="immigration" name="immigration" placeholder="Please select option" required>
+                        <datalist id="immigration">
+                            <option value="Yes">
+                            <option value="No">
+                            <option value="Other">
+                        </datalist>
+
+                        <label for="workability">Are you able to work from our Houston HQ 3 days per week? *</label>
+                        <input list="workability" name="workability" placeholder="Please select option" required>
+                        <datalist id="workability">
+                            <option value="Yes">
+                            <option value="No">
+                        </datalist>
+
+                        <label for="additionalinfo">Additional Information<br><span class="subtitle">Please share anything else you want us to know, such as your motivation for applying or additional context for your application.</span></label>
+                        <textarea id="additionalinfo" name="additionalinfo"></textarea>
+
+                        <label for="profile">Where can we learn more about you?<br><span class="subtitle">Ex: Linkedin profile, personal website, portfolio page</span></label>
+                        <input type="text" id="profile" name="profile">
+
+                        <label for="experience">How many years of relevant experience do you have, excluding internships or academia?</label>
+                        <input list="experience" name="experience" placeholder="Please select option">
+                        <datalist id="experience">
+                            <option value="0-1">
+                            <option value="2-4">
+                            <option value="5-7">
+                            <option value="7+">
+                        </datalist>
+
+                        <input type="submit">
+                    </form>
+                </div>
+            </div>
         </div>
 
         <div class="gap"></div>

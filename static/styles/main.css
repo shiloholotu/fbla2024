@@ -20,6 +20,92 @@ body{
 
 /* GENERAL */
 
+/* footer */
+#footer{
+    background:rgb(26 26 51);
+    display: flex;
+    justify-content: space-evenly;
+    padding:43px;
+}
+
+
+#logoColumn{
+    display: grid;
+    align-content: center;
+}
+
+#footer p{
+    color:white;
+    margin-bottom: 10px;
+}
+#footer a{
+    display: block;
+    text-decoration: none;
+    color:white;
+    opacity: .6;
+    cursor: pointer;
+    transition:.25s;
+}
+
+#footer a:hover{
+    transform:translate(0,-3px);
+    opacity: .8;
+}
+
+#footer img{
+    width: 65px;
+    opacity: .27;
+}
+
+
+/* page headers */
+
+.sectionHeader{
+    margin-bottom:70px;
+}
+
+.sectionHeader h1{
+    font-family: 'Kanit';
+    font-size: min(100px,7vw);
+    line-height: 80%;
+    text-transform: uppercase;
+    color: rgb(42 41 85);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.sectionHeader p{
+    text-align: center;
+    font-size: 20px;
+    margin: 0;
+    opacity: .8;
+    width: 80%;
+    max-width: 700px;
+    margin: auto;
+}
+
+.sectionHeader a{
+    font-family: 'Poppins';
+    text-decoration: none;
+    color: white;
+    padding: 12px;
+    display: block;
+    width: fit-content;
+    font-size: 20px;
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: var(--font-color);
+    margin:auto;
+    margin-top: 40px;
+    transition: .25s;
+}
+
+.sectionHeader a:hover{
+    opacity: .8;
+    transform: translate(0,-3px);
+}
+
 /* gaps */
 .gap{
     height: 20vh;
@@ -162,6 +248,68 @@ body{
     background: var(--font-color);
     margin-top:40px;
 }
+
+
+/* PRICING OPTIONS */
+#pricingOptions{
+    display: flex;
+    margin:auto;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+#pricingOptions div{
+    max-width: 300px;
+    border-radius: 15px;
+    border: 2px solid rgb(0,0,50,0.15);
+    padding:15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    flex:1;
+    box-shadow: 0px 5px 20px rgb(0,0,50,0.1);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#pricingOptions h2{
+    font-family: 'Kanit';
+    text-align: center;
+    font-size: 35px;
+    margin-bottom:0;
+}
+
+.price{
+    font-size: 25px;
+    text-align: center;
+    font-weight: 600;
+    opacity: .75;
+    margin-top:10px
+}
+.price span{
+    font-size: 16px;
+}
+
+/* pro option */
+#mostPopular{
+    background: var(--main-purple);
+    padding: 6px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: fit-content;
+    margin: auto;
+    color: white;
+    font-weight: 600;
+    border-radius: 15px;
+    font-size: 18px;
+}
+
+
+#proOption{transform:translate(0px,-30px);}
+#proOption h2{margin-top:10px;}
+
 
 /* TRY IT OUT PAGE */
 
@@ -411,47 +559,7 @@ select {
 
 
 /* MAIN CAREERS PAGE */
-#careerHeader{
-   
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    margin: auto;
-    margin-top: 80px;
-    margin-bottom:50px;
-}
 
-#careerHeader h1{
-    font-family: 'Kanit';
-    font-size: min(100px,7vw);
-    line-height: 80%;
-    text-transform: uppercase;
-    color: rgb(42 41 85);
-    margin-bottom:30px;
-    text-align: center;
-}
-
-#careerHeader p{
-    text-align: center;
-    font-size: 20px;
-    margin:0;
-    opacity: .8;
-}
-
-#careerHeader a {
-    text-align: center;
-    opacity: 1;
-    color: var(--main-purple);
-    font-family: "Poppins";
-}
-#careerHeader a:visited{
-    color: var(--main-purple);   
-}
-
-#careerHeader div{
-    width: min(800px,80%);
-}
 
 .companyInfo {
     display: flex;

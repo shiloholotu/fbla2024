@@ -22,8 +22,9 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
         <!-- Preload slideshow images-->
-        <link rel="preload" as="image" href="assets/slideshow/mona.png">
-        <link rel="preload" as="image" href="assets/slideshow/text-gen.png">
+        <link rel="preload" as="image" href="static/assets/slideshow/mona.png">
+        <link rel="preload" as="image" href="static/assets/slideshow/text-gen.png">
+        <link rel="preload" as="image" href="static/assets/slideshow/code.png">
 
         <!-- Favicon -->
         <link rel="icon" href="static/assets/logo.png">
@@ -56,6 +57,8 @@
 
         <div class="gap"></div>
 
+        <!-- SLIDESHOW SECTION -->
+
         <div id="slideControls">
             <img src="static/assets/svg/left.svg" id="prevSlide" onclick="prevSlide()" style="margin-right:20px">
             <div id="slideDot0" class="slideDot" onclick="showSlide(0)"></div>
@@ -78,6 +81,14 @@
         </div>
 
         <div class="gap"></div>
+        <div class="gap"></div>
+
+        <!-- REVIEWS/TESTIMONIALS SECTION -->
+
+        <div class="sectionHeader">
+            <h1 style="font-size:min(50px,7vw)">Hear from our <span class="purpText">customers</span></h1>
+            <p>Don't just take our word for it, hear what customers think.</p>
+        </div>
 
         <div class="review">
             <img class="reviewFace" src="static/assets/reviews/face1.png">
@@ -98,12 +109,84 @@
         <div class="review">
             <img class="reviewFace" src="static/assets/reviews/face3.png">
             <div>
-                <h3>Blah blah blah Blah blah blah Blah blah blah Blah</h3>
-                <p>Quinn C. • Published Author</p>
+                <h3>I use Singularity's code generation feature everyday for my job as a software engineer. I've never been so productive!</h3>
+                <p>Quinn C. • Software Engineering</p>
             </div>
         </div>
 
+        
         <div class="gap"></div>
+    
+
+        <!-- PRICING SECTION -->
+
+        <div class="sectionHeader">
+            <h1 style="font-size:min(50px,7vw)">Let's make something <span class="purpText">happen.</span></h1>
+            <p>Upgrade or cancel plans anytime. No strings attached.</p>
+        </div>
+        <br><br>
+
+        <div id="pricingOptions">
+            <div>
+                <h2>Hobbyist</h2>
+                <p class="price">FREE</p>
+                <p>• Full access to the Singularity Text-Generation Service</p>
+                <p>• Limited access to the Singularity Code-Generation Service(10 prompts/hour)</p>
+                <p>• Limited access to the Singularity Image-Generation Service(1 prompts/hour)</p>
+            </div>
+
+            <div id="proOption">
+                <p id="mostPopular">Most popular</p>
+                <h2>Pro</h2>
+                <p class="price">$10<span> / month</span></p>
+                <p>• Full access to the Singularity Text-Generation Service</p>
+                <p>• Full access to the Singularity Code-Generation Service</p>
+                <p>• Limited access to the Singularity Image-Generation Service(10 prompts/hour)</p>
+            </div>
+
+            <div>
+                <h2>Enterprise</h2>
+                <p class="price">$30<span> / month</span></p>
+                <p>• Full access to the Singularity Text-Generation Service</p>
+                <p>• Full access to the Singularity Code-Generation Service</p>
+                <p>• Full access to the Singularity Image-Generation Service</p>
+                <p>• Faster generation speed</p>
+            </div>
+        </div>
+
+
+        <div class="gap"></div>
+        <div class="gap"></div>
+
+        <!-- FOOTER -->
+        <div id="footer">
+
+            <div id="logoColumn">
+                <img src="/static/assets/branding/logo-white.png">
+            </div>
+            
+
+            <div>
+                <p>Navigation</p>
+                <a href="/">Home</a>
+                <a href="/demo">Demo</a>
+                <a href="/careers">Careers</a>
+                <a href="/application">Apply</a>
+            </div>
+
+            <div>
+                <p>Contact</p>
+                <a>(000) 000-0000</a>
+                <a>hello@singularityai.com</a>
+            </div>
+
+            <div>
+                <p>Citations</p>
+                <a>Sources</a>
+                <a style="opacity: .2;">*All assets not listed in sources<br>are original</a>
+            </div>
+
+        </div>
 
         
         <script src="static/scripts/effects.js"></script>

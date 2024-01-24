@@ -386,13 +386,21 @@ select {
 }
 
 .review h3{
-    font-weight: 600;
+    font-weight: lighter;
     margin:0;
-    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-right: 50px;
+}
+
+.review h3 span{
+    font-size: 30px;
+    opacity: .6;
 }
 
 .review p{
     margin:0;
+    font-weight: 600;
+    opacity: .5;
 }
 
 .reviewStar{

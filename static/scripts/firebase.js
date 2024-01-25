@@ -1,28 +1,17 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-app.js";
+import app from "/static/scripts/firebaseConfig.js";
 import { getFirestore, collection, addDoc } from "firebase/firestore";    
-    // TODO: Add SDKs for Firebase products that you want to use
-    // https://firebase.google.com/docs/web/setup#available-libraries
-  
-    // Your web app's Firebase configuration
-    const firebaseConfig = {
-      apiKey: "AIzaSyC5nGCvCiTjJ7wloofHDkoxTulY1Cp9mm4",
-      authDomain: "singularity-a772b.firebaseapp.com",
-      projectId: "singularity-a772b",
-      storageBucket: "singularity-a772b.appspot.com",
-      messagingSenderId: "1018192054461",
-      appId: "1:1018192054461:web:dec9874a097cd5865acfd4"
-    };
-      
- // Initialize Firebase
-const app = initializeApp(firebaseConfig);
 
 // Get a reference to the Firestore database
 const db = getFirestore(app);
 
-// Add an event listener to the form's submit button
+/*// Add an event listener to the form's submit button
 const form = document.querySelector("form");
 form.addEventListener("submit", (event) => {
-  event.preventDefault(); // Prevent default form submission
+  event.preventDefault(); // Prevent default form submission */
+
+const but = document.getElementById("button");
+but.addEventListener("click", (event) => {
+  event.preventDefault();
 
   // Get the form data
   const formData = new FormData(form);

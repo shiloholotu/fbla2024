@@ -172,6 +172,8 @@ body{
 /* navbar */
 #navbar{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 17px;
     position: sticky;
     z-index: 99999;
@@ -195,6 +197,28 @@ body{
     width: 40px;
     vertical-align: middle;
     margin-right: 5px;
+}
+
+#navbar div{
+    width: fit-content;
+    margin-right: 100px;
+}
+
+#navbar div a{
+    text-decoration: none;
+    color:var(--font-color);
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 25px;
+    opacity: .8;
+    transition: .25s;
+    cursor: pointer;
+    display: inline-block;
+}
+
+#navbar div a:hover{
+    transform:translate(0,-2px);
+    opacity: 1;
 }
 
 
@@ -696,11 +720,15 @@ select {
 }
 
 .application input {
-    display:block;
+    display: block;
     font-family: "Poppins";
     margin-bottom: 3vh;
     width: 100%;
     height: 20px;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid rgb(0,0,50,0.2);
+    outline: none;
 }
 
 label {

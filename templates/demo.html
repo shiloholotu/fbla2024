@@ -15,6 +15,11 @@
 
         <link rel="stylesheet" href="static/styles/main.css">
 
+        <!-- highlight.js -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/go.min.js"></script>
+
          <!-- Animate on Scroll -->
          <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
          <!-- Jquery -->
@@ -72,8 +77,15 @@
     
     <body>
 
+        <!-- NAVBAR -->
         <div id="navbar">
             <a class="logo" href="/"><img src="static/assets/logo.png">singularity</a>
+            <div class="navigation">
+                <a href="/demo">Demo</a>
+                <a href="/careers">Careers</a>
+                <a href="/application">Apply</a>
+                <a>Sources</a>
+            </div>
         </div>
 
         <div id="landingSection" data-aos="fade-in" data-aos-duration="700" data-aos-delay="400">
@@ -84,36 +96,70 @@
         </div>
 
         
-        <div class="demoPrompt">
-            <select class="dropdown" id="genInput1" onchange="updateDropdowns()">
-                <option value="image"selected>Generate an image</option>
-                <option value="essay">Write an essay</option>
-                <option value="function">Code a function</option>
-            </select>
+        <div data-aos="fade-in" data-aos-duration="700" data-aos-delay="500">
+            <div class="demoPrompt">
+                <select class="dropdown" id="genInput1" onchange="updateDropdowns()">
+                    <option value="image"selected>Generate an image</option>
+                    <option value="essay">Write an essay</option>
+                    <option value="function">Code a function</option>
+                </select>
 
-            <select class="dropdown" id="genInput2">
-                <option value="cat"selected>of a cat</option>
-                <option value="santa">of Santa Claus</option>
-                <option value="apple">of an apple</option>
-            </select>
+                <select class="dropdown" id="genInput2">
+                    <option value="cat"selected>of a cat</option>
+                    <option value="santa">of Santa Claus</option>
+                    <option value="apple">of an apple</option>
+                </select>
 
-            <select class="dropdown" id="genInput3">
-                <option value="skateboard"selected>riding a skateboard</option>
-                <option value="beach">relaxing on the beach</option>
-                <option value="textbook">reading a textbook</option>
-            </select>
+                <select class="dropdown" id="genInput3">
+                    <option value="skateboard"selected>riding a skateboard</option>
+                    <option value="beach">relaxing on the beach</option>
+                    <option value="textbook">reading a textbook</option>
+                </select>
 
-            <button id="genButton" onclick="generateDemo()">Generate</button>
-        </div>
+                <button id="genButton" onclick="generateDemo()">Generate</button>
+            </div>
 
-        <div id="demoSpace">
-            <img id='demoImg' src="static/assets/ai-pics/cat/skateboard/0.png">
-            
-            
+            <div id="demoSpace">
+                <img id='demoImg' src="static/assets/ai-pics/cat/skateboard/0.png">
+            </div>
         </div>
 
         <div class="gap"></div>
+        <div class="gap"></div>
 
+        <!-- FOOTER -->
+        <div id="footer">
+
+            <div id="logoColumn">
+                <img src="/static/assets/branding/logo-white.png">
+            </div>
+            
+
+            <div>
+                <p>Navigation</p>
+                <a href="/">Home</a>
+                <a href="/demo">Demo</a>
+                <a href="/careers">Careers</a>
+                <a href="/application">Apply</a>
+            </div>
+
+            <div>
+                <p>Contact</p>
+                <a>(000) 000-0000</a>
+                <a>hello@singularityai.com</a>
+            </div>
+
+            <div>
+                <p>Citations</p>
+                <a>Sources</a>
+                <a style="opacity: .2;">*All assets not listed in sources<br>are original</a>
+            </div>
+
+        </div>
+
+    
+
+        <script>hljs.highlightAll();</script>
         <script src="static/scripts/demo-data.js"></script>
         <script src="static/scripts/demo.js"></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

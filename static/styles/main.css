@@ -3,6 +3,10 @@
     --main-purple:#9f30fd;
     --font-color:rgb(42,41,85);
 }
+
+html {
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Poppins';
     color:var(--font-color);
@@ -15,6 +19,92 @@ body{
 }
 
 /* GENERAL */
+
+/* footer */
+#footer{
+    background:rgb(26 26 51);
+    display: flex;
+    justify-content: space-evenly;
+    padding:43px;
+}
+
+
+#logoColumn{
+    display: grid;
+    align-content: center;
+}
+
+#footer p{
+    color:white;
+    margin-bottom: 10px;
+}
+#footer a{
+    display: block;
+    text-decoration: none;
+    color:white;
+    opacity: .6;
+    cursor: pointer;
+    transition:.25s;
+}
+
+#footer a:hover{
+    transform:translate(0,-3px);
+    opacity: .8;
+}
+
+#footer img{
+    width: 65px;
+    opacity: .27;
+}
+
+
+/* page headers */
+
+.sectionHeader{
+    margin-bottom:70px;
+}
+
+.sectionHeader h1{
+    font-family: 'Kanit';
+    font-size: min(100px,7vw);
+    line-height: 80%;
+    text-transform: uppercase;
+    color: rgb(42 41 85);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.sectionHeader p{
+    text-align: center;
+    font-size: 20px;
+    margin: 0;
+    opacity: .8;
+    width: 80%;
+    max-width: 700px;
+    margin: auto;
+}
+
+.sectionHeader a{
+    font-family: 'Poppins';
+    text-decoration: none;
+    color: white;
+    padding: 12px;
+    display: block;
+    width: fit-content;
+    font-size: 20px;
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: var(--font-color);
+    margin:auto;
+    margin-top: 40px;
+    transition: .25s;
+}
+
+.sectionHeader a:hover{
+    opacity: .8;
+    transform: translate(0,-3px);
+}
 
 /* gaps */
 .gap{
@@ -82,6 +172,8 @@ body{
 /* navbar */
 #navbar{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 17px;
     position: sticky;
     z-index: 99999;
@@ -105,6 +197,28 @@ body{
     width: 40px;
     vertical-align: middle;
     margin-right: 5px;
+}
+
+#navbar div{
+    width: fit-content;
+    margin-right: 100px;
+}
+
+#navbar div a{
+    text-decoration: none;
+    color:var(--font-color);
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 25px;
+    opacity: .8;
+    transition: .25s;
+    cursor: pointer;
+    display: inline-block;
+}
+
+#navbar div a:hover{
+    transform:translate(0,-2px);
+    opacity: 1;
 }
 
 
@@ -158,6 +272,68 @@ body{
     background: var(--font-color);
     margin-top:40px;
 }
+
+
+/* PRICING OPTIONS */
+#pricingOptions{
+    display: flex;
+    margin:auto;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+#pricingOptions div{
+    max-width: 300px;
+    border-radius: 15px;
+    border: 2px solid rgb(0,0,50,0.15);
+    padding:15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    flex:1;
+    box-shadow: 0px 5px 20px rgb(0,0,50,0.1);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#pricingOptions h2{
+    font-family: 'Kanit';
+    text-align: center;
+    font-size: 35px;
+    margin-bottom:0;
+}
+
+.price{
+    font-size: 25px;
+    text-align: center;
+    font-weight: 600;
+    opacity: .75;
+    margin-top:10px
+}
+.price span{
+    font-size: 16px;
+}
+
+/* pro option */
+#mostPopular{
+    background: var(--main-purple);
+    padding: 6px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: fit-content;
+    margin: auto;
+    color: white;
+    font-weight: 600;
+    border-radius: 15px;
+    font-size: 18px;
+}
+
+
+#proOption{transform:translate(0px,-30px);}
+#proOption h2{margin-top:10px;}
+
 
 /* TRY IT OUT PAGE */
 
@@ -231,6 +407,15 @@ body{
     box-shadow: 0 20px 50px rgb(0,0,50,0.3);
 }
 
+/* demo code generation */
+#demoSpace code{
+    width: 80%;
+    max-width: 800px;
+    border-radius: 20px;
+    margin: auto;
+    font-size: 16px;
+}
+
 /* demo text generation */
 
 #demoSpace div{
@@ -267,34 +452,324 @@ body{
     opacity: .65;
 }
 
+
+/* SCROLL BAR */
 /* width */
-#demoSpace div p::-webkit-scrollbar {
+#demoSpace div p::-webkit-scrollbar , #demoSpace code::-webkit-scrollbar{
 	margin-left: 5px;
     margin-right: 5px;
  	width: 10px;
 }
 
 /* Track */
-#demoSpace div p::-webkit-scrollbar-track {
+#demoSpace div p::-webkit-scrollbar-track, #demoSpace code::-webkit-scrollbar-track  {
   background-color: transparent;
 }
  
 /* Handle */
-#demoSpace div p::-webkit-scrollbar-thumb {
+#demoSpace div p::-webkit-scrollbar-thumb, #demoSpace code::-webkit-scrollbar-thumb {
   background: rgba(0,0,0,0.2); 
   border-radius: 10px;
   transition: .25s;
 }
 
-/* Handle on hover */
-#demoSpace div p::-webkit-scrollbar-thumb:hover {
-  background: rgba(0,0,0,0.); 
-}
-
+#demoSpace code::-webkit-scrollbar-thumb {background:rgba(255,255,255,0.2);}
 
 select {
     -webkit-appearance: none;
     -moz-appearance: none;
     font-family: 'Poppins';
     outline: none;
-  }
+}
+
+/* JOB LISTING PAGES */
+.jobStuff {
+    justify-content: left;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom:50px;
+}
+
+.jobStuff h1{
+    font-family: 'Kanit';
+    font-size: min(100px,6vw);
+    line-height: 80%;
+    color: rgb(42 41 85);
+    margin-bottom:30px;
+}
+
+.jobstuff h2 {
+    font-weight: lighter;
+}
+
+.jobStuff p{
+    margin:0;
+}
+
+.jobStuff .backto {
+    color: var(--font-color);
+}
+
+.jobStuff .salaryrange{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.jobStuff .paragraph {
+    margin-bottom: 5vh;
+}
+
+.jobStuff .apply {
+    font-family: 'Poppins';
+    text-decoration: none;
+    padding: 12px;
+    display: block;
+    width: fit-content;
+    font-size: 20px;
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: var(--font-color);
+    color: white;
+}
+
+/* REVIEWS */
+.review{
+    display: flex;
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    border-radius: 15px;
+    border: 2px solid rgb(0,0,50,0.15);
+    padding: 10px;
+    align-items: center;
+    border-radius: 100px;
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 20px rgb(0,0,50,0.1);
+}
+
+.reviewFace{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.review h3{
+    font-weight: lighter;
+    margin:0;
+    margin-bottom: 10px;
+    margin-right: 50px;
+}
+
+.review h3 span{
+    font-size: 30px;
+    opacity: .6;
+}
+
+.review p{
+    margin:0;
+    font-weight: 600;
+    opacity: .5;
+}
+
+.reviewStar{
+    width: 25px;
+    margin-right: 5px;
+    opacity: .35;
+}
+
+
+/* MAIN CAREERS PAGE */
+
+
+.companyInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom:30px;
+}
+
+.companyInfo h1{
+    font-family: 'Kanit';
+    font-size: min(50px,7vw);
+    line-height: 80%;
+    color: rgb(42 41 85);
+    margin-bottom:30px;
+    text-align: left;
+}
+
+.companyInfo p{
+    font-size: 20px;
+    margin:0;
+    opacity: .8;
+}
+
+.companyInfo hr{
+    opacity: 0.6;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.companyInfo div{
+    min-width: 100%;
+}
+
+#openPositions {
+    width: 90%;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom:30px;
+}
+
+#openPositions h1 {
+    font-family: 'Kanit';
+    font-size: min(50px,7vw);
+    line-height: 80%;
+    color: rgb(42 41 85);
+    margin-bottom:30px;
+    text-align: left;
+}
+
+#openPositions p{
+    font-size: 20px;
+    margin:0;
+    opacity: .8;
+}
+
+#openPositions hr{
+    opacity: 0.6;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.listing {
+    display: flex;
+    justify-content: space-between;
+}
+
+.listing .left-align {
+    display: inline-block;
+    text-align: left;
+    font-weight: bold;
+}
+
+.listing .right-align {
+    display: inline-block;
+    text-align: right;
+}
+
+#openPositions a {
+    opacity: 1;
+    color: var(--font-color);
+    font-family: "Poppins";
+}
+#openPositions a:visited{
+    color: var(--font-color);   
+}
+
+#benefits {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 85%;
+    margin: auto;
+    margin-bottom:30px;
+}
+
+#benefits div{
+    padding: 5px 20px;
+    width: 33%;
+}
+#benefits strong{
+    font-size: 20px;
+    margin: 0;
+}
+
+#benefits ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#benefits li::before{
+    content: "\2713";
+    display: inline-block;
+    width: 1.5em;
+}
+
+
+/* THE ACTUAL APPLICATION PAGE */
+
+.application {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom:30px;
+}
+
+.application div {
+    width: min(800px,80%);
+}
+
+.application input {
+    display: block;
+    font-family: "Poppins";
+    margin-bottom: 3vh;
+    width: 100%;
+    height: 20px;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid rgb(0,0,50,0.2);
+    outline: none;
+}
+
+label {
+    display:block;
+    margin-bottom: 1vh;
+    line-height: 1.8;
+}
+
+.application input[type="file"] {
+    padding-bottom: 5px;
+    font-family: "Poppins";
+}
+
+.application input[type="submit"]{
+    margin:auto;
+    display: flex;
+    height: fit-content;
+    font-family: 'Poppins';
+    text-decoration: none;
+    padding: 12px;
+    width: fit-content;
+    font-size: 20px;
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: var(--font-color);
+    color: white;
+}
+
+.application .subtitle {
+    opacity: 0.6;
+}
+
+.application textarea {
+    margin-top: 15px;
+    margin-bottom: 3vh;
+    width: 100%;
+    height: 15vh;
+}
+
+
+@media only screen and (max-width: 950px) {
+
+}

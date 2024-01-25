@@ -1,25 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-    <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.2/firebase-app.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-      
-        // Your web app's Firebase configuration
-        const firebaseConfig = {
-          apiKey: "AIzaSyC5nGCvCiTjJ7wloofHDkoxTulY1Cp9mm4",
-          authDomain: "singularity-a772b.firebaseapp.com",
-          projectId: "singularity-a772b",
-          storageBucket: "singularity-a772b.appspot.com",
-          messagingSenderId: "1018192054461",
-          appId: "1:1018192054461:web:dec9874a097cd5865acfd4"
-        };
-      
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-      </script>
-      
     <head>
         
         <meta charset="UTF-8">
@@ -41,7 +21,12 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
         <!-- Preload slideshow images-->
-        <link rel="preload" as="image" href="assets/slideshow/mona.png">
+        <link rel="preload" as="image" href="static/assets/slideshow/mona.png">
+        <link rel="preload" as="image" href="static/assets/slideshow/text-gen.png">
+        <link rel="preload" as="image" href="static/assets/slideshow/code.png">
+
+        <!-- Favicon -->
+        <link rel="icon" href="static/assets/logo.png">
         
         <title>Singularity | The power of AI at your fingertips</title>
          
@@ -50,7 +35,13 @@
     <body>
 
         <div id="navbar">
-            <a class="logo" href="index.html"><img src="static/assets/logo.png">singularity</a>
+            <a class="logo" href="/"><img src="static/assets/logo.png">singularity</a>
+            <div class="navigation">
+                <a href="/demo">Demo</a>
+                <a href="/careers">Careers</a>
+                <a href="/application">Apply</a>
+                <a>Sources</a>
+            </div>
         </div>
 
 
@@ -58,7 +49,7 @@
             <div id="landingSection">
                 <div id="aiText">
                     <h1>The power of AI, <span class='purpText'>at your fingertips.</span></h1>
-                    <p>Here at singularity, we provide Cutting-edge AI-powered services to maximize creativity and productivity through text, image, and code generation.</p>
+                    <p>Here at singularity, we provide cutting-edge AI-powered services to maximize creativity and productivity through text, image, and code generation.</p>
                     <a id="getStarted" href="/demo">Get Started</a>
                 </div>
                 <img id="aiHead" src="static/assets/hand.png">
@@ -71,6 +62,8 @@
 
         <div class="gap"></div>
 
+        <!-- SLIDESHOW SECTION -->
+
         <div id="slideControls">
             <img src="static/assets/svg/left.svg" id="prevSlide" onclick="prevSlide()" style="margin-right:20px">
             <div id="slideDot0" class="slideDot" onclick="showSlide(0)"></div>
@@ -79,7 +72,7 @@
             <img src="static/assets/svg/right.svg" id="nextSlide" onclick="nextSlide()" style="margin-left:20px">
         </div>
 
-        <div id="slideshow">
+        <div id="slideshow" style="opacity: 0;">
             <img src="static/assets/mona.png" id="blurbImg">
             <div>
                 <h1 id="blurbHeader">Write Content <span class="purpText">Effortlessly.</span></h1>
@@ -93,6 +86,112 @@
         </div>
 
         <div class="gap"></div>
+        <div class="gap"></div>
+
+        <!-- REVIEWS/TESTIMONIALS SECTION -->
+
+        <div class="sectionHeader">
+            <h1 style="font-size:min(50px,7vw)">Hear from our <span class="purpText">customers</span></h1>
+            <p>Don't just take our word for it, hear what customers think.</p>
+        </div>
+
+        <div class="review">
+            <img class="reviewFace" src="static/assets/reviews/face1.png">
+            <div>
+                <h3>Singularity's text-generation service makes it so much easier to write lessons for my students!</h3>
+                <p>Martha J. • Elementary Teacher</p>
+            </div>
+        </div>
+
+        <div class="review">
+            <img class="reviewFace" src="static/assets/reviews/face2.png">
+            <div>
+                <h3>With Singularity's image-generation, I was able to take my art pieces to the next level. I can't recommend it enough!</h3>
+                <p>Simeon O. • Digital Illustrator</p>
+            </div>
+        </div>
+
+        <div class="review">
+            <img class="reviewFace" src="static/assets/reviews/face3.png">
+            <div>
+                <h3>I use Singularity's code generation feature everyday for my job as a software engineer. I've never been so productive!</h3>
+                <p>Quinn C. • Software Engineering</p>
+            </div>
+        </div>
+
+        
+        <div class="gap"></div>
+    
+
+        <!-- PRICING SECTION -->
+
+        <div class="sectionHeader">
+            <h1 style="font-size:min(50px,7vw)">Let's make something <span class="purpText">happen.</span></h1>
+            <p>Upgrade or cancel plans anytime. No strings attached.</p>
+        </div>
+        <br><br>
+
+        <div id="pricingOptions">
+            <div>
+                <h2>Hobbyist</h2>
+                <p class="price">Free</p>
+                <p>• Full access to the Singularity Text-Generation Service</p>
+                <p>• Limited access to the Singularity Code-Generation Service (10 prompts/hour)</p>
+                <p>• Limited access to the Singularity Image-Generation Service (1 prompts/hour)</p>
+            </div>
+
+            <div id="proOption">
+                <p id="mostPopular">Most popular</p>
+                <h2>Pro</h2>
+                <p class="price">$10<span> / month</span></p>
+                <p>• Full access to the Singularity Text-Generation Service</p>
+                <p>• Full access to the Singularity Code-Generation Service</p>
+                <p>• Limited access to the Singularity Image-Generation Service (10 prompts/hour)</p>
+            </div>
+
+            <div>
+                <h2>Enterprise</h2>
+                <p class="price">$30<span> / month</span></p>
+                <p>• Full access to the Singularity Text-Generation Service</p>
+                <p>• Full access to the Singularity Code-Generation Service</p>
+                <p>• Full access to the Singularity Image-Generation Service</p>
+                <p>• Faster generation speed</p>
+            </div>
+        </div>
+
+
+        <div class="gap"></div>
+        <div class="gap"></div>
+
+        <!-- FOOTER -->
+        <div id="footer">
+
+            <div id="logoColumn">
+                <img src="/static/assets/branding/logo-white.png">
+            </div>
+            
+
+            <div>
+                <p>Navigation</p>
+                <a href="/">Home</a>
+                <a href="/demo">Demo</a>
+                <a href="/careers">Careers</a>
+                <a href="/application">Apply</a>
+            </div>
+
+            <div>
+                <p>Contact</p>
+                <a>(000) 000-0000</a>
+                <a>hello@singularityai.com</a>
+            </div>
+
+            <div>
+                <p>Citations</p>
+                <a>Sources</a>
+                <a style="opacity: .2;">*All assets not listed in sources<br>are original</a>
+            </div>
+
+        </div>
 
         
         <script src="static/scripts/effects.js"></script>

@@ -1,9 +1,23 @@
-import os
 from flask import Flask, request, jsonify, render_template
-from firebase_admin import credentials, firestore, initialize_app
+from firebase_admin import db, credentials
+import firebase_admin
 
 app = Flask(__name__)
 
+
+cred = credentials.Certificate("key.json")
+firebase_admin.initialize_app(cred, {"databaseURL":"https://fbla-decfd-default-rtdb.firebaseio.com/"})
+
+ref = db.reference("/")
+
+def decodeHex(hstr):
+    return bytes.fromhex(hstr).decode("utf-8")
+
+print(decodeHex("7368696c6f682069732074657374696e6720686578207374756666"))
+    
+
+
+'''
 # Initialize Firestore DB
 cred = credentials.Certificate('key.json')
 default_app = initialize_app(cred)
@@ -51,7 +65,7 @@ def delete():
         return jsonify({"success": True}), 200
     except Exception as e:
         return f"An Error Occured: {e}"
-
+'''
 @app.route("/")
 def index():
     return render_template("index.html")
@@ -80,9 +94,15 @@ def careers():
 def application():
     return render_template("application.html")
 
-@app.route("/test")
-def test():
-    return render_template("test.html")
+@app.route("/submit/<inp>/<rnd>")
+def submit(inp,rnd):
+    data = ["job","firstname","lastname","email","phone","resume","outreach","startdate","immigration","workability","additionalinfo","profile","experience"]
+    inp = decodeHex(inp).split(":BB:")
+    inp = inp[:-1]
+
+    for i in range(len(data)):
+        db.reference("/"+ rnd + "/" + data[i]).set(inp[i])
+    return render_template("success.html")
 
 if __name__ == "__main__":
     app.run(debug=True)

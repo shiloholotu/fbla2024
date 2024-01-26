@@ -742,7 +742,17 @@ label {
     font-family: "Poppins";
 }
 
-.application input[type="submit"]{
+#additionalinfo{
+    padding:10px;
+    outline:none;
+    border-radius: 12px;
+    border: 1px solid rgb(0,0,50,0.2);
+    outline: none;
+    font-family: 'Poppins';
+    resize: none;
+}
+
+#applyButton{
     margin:auto;
     display: flex;
     height: fit-content;
@@ -756,6 +766,9 @@ label {
     padding-right: 30px;
     background: var(--font-color);
     color: white;
+    border:none;
+    outline:none;
+    cursor: pointer;
 }
 
 .application .subtitle {

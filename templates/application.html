@@ -49,8 +49,8 @@
                     <h1>Apply to Singularity</h1>
                     <p class="subtitle">Questions marked with a * are required.</p>
                     <form>
-                        <label for="joblist">What job are you applying to?</label>
-                        <input list="joblist" name="joblist" placeholder="Please select option">
+                        <label for="joblist">What job are you applying to? *</label>
+                        <input id="job" list="joblist" name="joblist" placeholder="Please select option" required>
                         <datalist id="joblist">
                             <option value="Hardware/Software Co-Design Engineer">
                             <option value="Applied AI Product Data Scientist">
@@ -70,7 +70,7 @@
                         <input type="text" id="phone" name="phone" placeholder="Ex: (888) 888-8888">
 
                         <label for="resume">Link to Resume/CV *</label>
-                        <input type="url" id="resume" name="resume" required>
+                        <input type="text" id="resume" name="resume" required>
 
                         <hr>
 
@@ -80,17 +80,17 @@
                         <label for="startdate">When can you start a new role? *</label>
                         <input type="text" id="startdate" name="startdate" required>
 
-                        <label for="immigration">Do you now or will you in the future require visa sponsorship to continue working in the United Kingdom? *<br><span class="subtitle">We provide immigration and sponsorship support to employees based on unique circumstances.</span></label>
-                        <input list="immigration" name="immigration" placeholder="Please select option" required>
-                        <datalist id="immigration">
+                        <label for="immigrationList">Do you now or will you in the future require visa sponsorship to continue working in the United States? *<br><span class="subtitle">We provide immigration and sponsorship support to employees based on unique circumstances.</span></label>
+                        <input id="immigration" list="immigrationList" name="immigration" placeholder="Please select option" required>
+                        <datalist id="immigrationList">
                             <option value="Yes">
                             <option value="No">
                             <option value="Other">
                         </datalist>
 
-                        <label for="workability">Are you able to work from our Houston HQ 3 days per week? *</label>
-                        <input list="workability" name="workability" placeholder="Please select option" required>
-                        <datalist id="workability">
+                        <label for="workabilityList">Are you able to work from our Houston HQ 3 days per week? *</label>
+                        <input id="workability" list="workabilityList" name="workability" placeholder="Please select option" required>
+                        <datalist id="workabilityList">
                             <option value="Yes">
                             <option value="No">
                         </datalist>
@@ -101,16 +101,15 @@
                         <label for="profile">Where can we learn more about you?<br><span class="subtitle">Ex: Linkedin profile, personal website, portfolio page</span></label>
                         <input type="text" id="profile" name="profile">
 
-                        <label for="experience">How many years of relevant experience do you have, excluding internships or academia?</label>
-                        <input list="experience" name="experience" placeholder="Please select option">
-                        <datalist id="experience">
+                        <label for="experienceList">How many years of relevant experience do you have, excluding internships or academia?</label>
+                        <input id="experience" list="experienceList" name="experience" placeholder="Please select option">
+                        <datalist id="experienceList">
                             <option value="0-1">
                             <option value="2-4">
                             <option value="5-7">
                             <option value="7+">
                         </datalist>
-                        <button id="button" type="submit">submit</button>
-                        <!--<input type="submit">-->
+                        <button id="applyButton" onclick="setTimeout(submitApplication,10)">Submit</button>
                     </form>
                 </div>
             </div>
@@ -151,6 +150,7 @@
         </div>
 
     
+        <script src="/static/scripts/application.js"></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
           AOS.init();

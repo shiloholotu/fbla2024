@@ -41,6 +41,7 @@ function parallax(id, strength){
 
 
 
-parallax("aiHead",0.5);
+parallax("aiHand",0.5);
+parallax("aiHandMobile",0.3);
 parallax("aiText",0.3);
 

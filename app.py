@@ -13,9 +13,6 @@ ref = db.reference("/")
 def decodeHex(hstr):
     return bytes.fromhex(hstr).decode("utf-8")
 
-print(decodeHex("7368696c6f682069732074657374696e6720686578207374756666"))
-    
-
 
 '''
 # Initialize Firestore DB
@@ -93,6 +90,11 @@ def careers():
 @app.route("/application")
 def application():
     return render_template("application.html")
+
+@app.route("/positions")
+def positions():
+    return render_template("positions.html")
+
 
 @app.route("/submit/<inp>/<rnd>")
 def submit(inp,rnd):

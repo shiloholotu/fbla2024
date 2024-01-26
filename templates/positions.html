@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        
+        <meta charset="UTF-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css?family=Poppins:400,600,800" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&family=Share+Tech&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="static/styles/main.css">
+        <link rel="stylesheet" href="/static/styles/positions.css">
+
+        <!-- Animate on Scroll -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <!-- Jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+        <!-- Preload slideshow images-->
+        <link rel="preload" as="image" href="static/assets/slideshow/mona.png">
+        <link rel="preload" as="image" href="static/assets/slideshow/text-gen.png">
+        <link rel="preload" as="image" href="static/assets/slideshow/code.png">
+
+        <!-- Favicon -->
+        <link rel="icon" href="static/assets/logo.png">
+        
+        <title>Singularity | The power of AI at your fingertips</title>
+         
+    </head>
+    
+    <body>
+
+
+        <!-- NAVBAR -->
+        <div id="navbar">
+            <a class="logo" href="/"><img src="static/assets/logo.png">singularity</a>
+            <div class="navigation">
+                <a href="/demo">Demo</a>
+                <a href="/careers">Careers</a>
+                <a href="/application">Apply</a>
+                <a>Sources</a>
+            </div>
+        </div>
+
+
+    
+
+        <div class="sectionHeader">
+            <div>
+                <h1>Open Positions</h1>
+                <p>Join us on our mission to build an efficient, AI-powered future.</p>
+            </div>
+        </div>
+
+        
+        
+        <div class="gap" style="height: 1vh;"></div>
+    
+
+        <!-- OPEN POSITIONS -->
+        <div class="position">
+            <h2>Hardware/Software Co-Design Engineer</h2>
+            <p class="loc">Houston, TX</p>
+            <button class="toggleView" id="toggleView1" onclick="toggleView(1)">View more information</button>
+
+            <div id="jobDesc1">
+
+                <h3>Job Description</h3>
+                <p>We are seeking a passionate and innovative <span class="purpText">Hardware/Software Co-Design Engineer</span> to join our dynamic AI team at Singularity. 
+                    As a key member, you will play a crucial role in designing, implementing, and optimizing machine learning models for cutting-edge
+                     applications. You will collaborate with cross-functional teams to deliver scalable and robust AI solutions, pushing the boundaries of
+                      technology in a fast-paced environment.    
+                </p>
+
+                <h3>Job Requirements</h3>
+                <ul>
+                    <li>Deep understanding of GPU/AI accelerators</li>
+                    <li>Experience with CUDA or related accelerator programming language</li>
+                    <li>Able to collaborate with ML, software, and hardware engineers</li>
+                    <li>3+ years of relevant industry experience</li>
+                    <li>Profiency in C, C++, and Python</li>
+                    <li>Solid understanding of LLMs and associated challenges</li>
+                </ul>
+
+                <h3>Location</h3>
+                <p>This job is based in Houston, TX. We use a flexible hybrid work model with 3 days in the office per week.</p>
+
+                <h3>Salary and Benefits</h3>
+                <p>Annual Salary Range: $265,000—$395,000 USD<br>Compensation also includes generous equity (in company stock) along with the following benefits:</p>
+                <ul>
+                    <li>Medical, dental, and vision insurance for yourself and your family</li>
+                    <li>Mental health and wellness support</li>
+                    <li>401(k) plan with 6% matching</li>
+                    <li>Unlimited time off and 18+ company holidays per year</li>
+                    <li>Paid parental leave (20 weeks) and family planning support</li>
+                    <li>Annual learning and development stipend ($2000/year)</li>
+                </ul>
+
+                <a href="/application" class="apply">Apply now</a>
+            </div>
+
+        </div>
+
+
+        <div class="position">
+            <h2>Applied AI Product Data Scientist</h2>
+            <p class="loc">Houston, TX</p>
+            <button class="toggleView" id="toggleView2" onclick="toggleView(2)">View more information</button>
+
+            <div id="jobDesc2">
+
+                <h3>Job Description</h3>
+                <p>We are seeking an <span class="purpText">Applied AI Product Data Scientist</span> to join our Applied Product team at Singularity. In this role, you will contribute to establishing
+                     a data-driven product development culture, focusing on either consumer products or developer platforms. As a core member of the product development team,
+                      you will play a pivotal role in shaping our first-party offerings. Most importantly, you will work closely with the development of Singularity through
+                       the definition of our north-star metrics and A/B tests. 
+                </p>
+
+                <h3>Job Requirements</h3>
+                <ul>
+                    <li>5+ years of experience in a quantitative data science or product analyst role in a hyper-growth product company, navigating extensively ambiguous environments</li>
+                    <li>Mastery of SQL and Python to design and run rigorous experiments providing clear product recommendations and insights</li>
+                    <li>Experience defining and successfully implementing new feature/product metrics from scratch</li>
+                    <li>Excellent communication skills with demonstrated ability to communicate with managers, executives, and engineers</li>
+                </ul>
+
+                <h3>Location</h3>
+                <p>This job is based in Houston, TX. We use a flexible hybrid work model with 3 days in the office per week.</p>
+
+                <h3>Salary and Benefits</h3>
+                <p>Annual Salary Range: $245,000—$385,000 USD<br>Compensation also includes generous equity (in company stock) along with the following benefits:</p>
+                <ul>
+                    <li>Medical, dental, and vision insurance for yourself and your family</li>
+                    <li>Mental health and wellness support</li>
+                    <li>401(k) plan with 6% matching</li>
+                    <li>Unlimited time off and 18+ company holidays per year</li>
+                    <li>Paid parental leave (20 weeks) and family planning support</li>
+                    <li>Annual learning and development stipend ($2000/year)</li>
+                </ul>
+
+                <a href="/application" class="apply">Apply now</a>
+            </div>
+
+        </div>
+
+
+        <div class="position">
+            <h2>Insider Risk Investigator</h2>
+            <p class="loc">Houston, TX</p>
+            <button class="toggleView" id="toggleView3" onclick="toggleView(3)">View more information</button>
+
+            <div id="jobDesc3">
+
+                <h3>Job Description</h3>
+                <p>We are seeking a seasoned <span class="purpText">Insider Risk Investigator</span> to fortify our company, Singularity, 
+                    against internal security risks and threats. In this job, you will play a crucial role in safeguarding Singularity’s assets by
+                     analyzing any irregular activities, promoting a secure culture, and with interacting with various departments to mitigate risks.
+                      Your expertise will be vital to protecting our company against potential risks, contributing to the broader societal benefits of
+                       artificial intelligence. In this role, you will correlate data from various sources and conduct investigations into suspicious
+                        activities in order to maintain security across the company and mitigate internal threats.
+                </p>
+
+                <h3>Job Requirements</h3>
+                <ul>
+                    <li>Bachelor’s degree/higher education in computer science and/or related subject</li>
+                    <li>3+ years of experience in cybersecurity or related domain</li>
+                    <li>Mastery of SIEM (Security Information and Event Management) along with User Behavior Analytics tools</li>
+                    <li>Strong communicative skills to be able to relay complex issues to non-technical stakeholders</li>
+                </ul>
+
+                <h3>Location</h3>
+                <p>This job is based in Houston, TX. We use a flexible hybrid work model with 3 days in the office per week.</p>
+
+                <h3>Salary and Benefits</h3>
+                <p>Annual Salary Range: $225,000—$275,000 USD<br>Compensation also includes generous equity (in company stock) along with the following benefits:</p>
+                <ul>
+                    <li>Medical, dental, and vision insurance for yourself and your family</li>
+                    <li>Mental health and wellness support</li>
+                    <li>401(k) plan with 6% matching</li>
+                    <li>Unlimited time off and 18+ company holidays per year</li>
+                    <li>Paid parental leave (20 weeks) and family planning support</li>
+                    <li>Annual learning and development stipend ($2000/year)</li>
+                </ul>
+
+                <a href="/application" class="apply">Apply now</a>
+            </div>
+
+        </div>
+       
+
+
+        <div class="gap"></div>
+        <div class="gap"></div>
+
+        <!-- FOOTER -->
+        <div id="footer">
+
+            <div id="logoColumn">
+                <img src="/static/assets/branding/logo-white.png">
+            </div>
+            
+
+            <div>
+                <p>Navigation</p>
+                <a href="/">Home</a>
+                <a href="/demo">Demo</a>
+                <a href="/careers">Careers</a>
+                <a href="/application">Apply</a>
+            </div>
+
+            <div>
+                <p>Contact</p>
+                <a>(000) 000-0000</a>
+                <a>hello@singularityai.com</a>
+            </div>
+
+            <div>
+                <p>Citations</p>
+                <a>Sources</a>
+            </div>
+
+        </div>
+
+
+        <script src="/static/scripts/position.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+        
+    </body>
+    
+</html>

@@ -13,7 +13,6 @@ ref = db.reference("/")
 def decodeHex(hstr):
     return bytes.fromhex(hstr).decode("utf-8")
 
-
 '''
 # Initialize Firestore DB
 cred = credentials.Certificate('key.json')
@@ -94,6 +93,10 @@ def application():
 @app.route("/positions")
 def positions():
     return render_template("positions.html")
+
+@app.route("/sources")
+def sources():
+    return render_template("sources.html")
 
 
 @app.route("/submit/<inp>/<rnd>")

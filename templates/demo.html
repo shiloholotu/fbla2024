@@ -71,13 +71,16 @@
          <link rel="preload" as="image" href="static/assets/ai-pics/santa/textbook/2.png">
          <link rel="preload" as="image" href="static/assets/ai-pics/santa/textbook/3.png">
 
+         <!-- Favicon -->
+        <link rel="icon" href="static/assets/logo.png">
+
         <title>Try It Out | Singularity</title>
          
     </head>
     
     <body>
 
-        <!-- NAVBAR -->
+        <!-- DESKTOP NAVBAR -->
         <div id="navbar">
             <a class="logo" href="/"><img src="static/assets/logo.png">singularity</a>
             <div class="navigation">
@@ -86,6 +89,21 @@
                 <a href="/application">Apply</a>
                 <a href="/sources">Sources</a>
             </div>
+        </div>
+
+
+        <!-- MOBILE NAVBAR -->
+        <div id="mobileNavbar">
+            <a class="logo" href="/"><img src="static/assets/logo.png"></a>
+
+            <img id="burgerToggle" onclick="toggleBurgerMenu()" src="/static/assets/svg/menu.svg">
+        </div>
+
+        <div id="burgerMenu">
+            <a href="/demo">Demo</a>
+            <a href="/careers">Careers</a>
+            <a href="/application">Apply</a>
+            <a href="/sources">Sources</a>
         </div>
 
         <div id="landingSection" data-aos="fade-in" data-aos-duration="700" data-aos-delay="400">
@@ -157,7 +175,7 @@
         </div>
 
     
-
+        <script src="/static/scripts/navbar.js"></script>
         <script>hljs.highlightAll();</script>
         <script src="static/scripts/demo-data.js"></script>
         <script src="static/scripts/demo.js"></script>

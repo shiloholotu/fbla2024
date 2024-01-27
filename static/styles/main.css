@@ -188,6 +188,8 @@ p .purpText{
     padding-left: 40px;
 }
 
+
+
 .logo{
     font-weight: 600;
     font-size: 1.5em;
@@ -208,7 +210,7 @@ p .purpText{
     margin-right: 100px;
 }
 
-#navbar div a{
+#navbar div a, #burgerMenu a{
     text-decoration: none;
     color:var(--font-color);
     font-size: 18px;
@@ -223,6 +225,48 @@ p .purpText{
 #navbar div a:hover{
     transform:translate(0,-2px);
     opacity: 1;
+}
+
+
+
+#mobileNavbar{
+    display: none;
+    position: sticky;
+    z-index: 99999;
+    top:0;
+    justify-content: space-between;
+    align-items: center;
+    padding:15px;
+    border-bottom: 2px solid rgb(0,0,50,0.1);
+    background: rgb(255,255,255,0.85);
+    backdrop-filter: blur(8px);
+}
+
+#mobileNavbar img{
+    width: 40px !important;
+}
+
+#burgerMenu{
+    position: fixed;
+    z-index: 9999;
+    display: none;
+    justify-items: center;
+    align-content: center;
+    background: rgb(255,255,255,0.85);
+    backdrop-filter: blur(8px);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: .25s;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#burgerMenu a{
+    margin:0;
+    margin-bottom: 20px;
+    font-size: 20px;
 }
 
 
@@ -813,6 +857,19 @@ label {
 
     #proOption{
         transform:translate(0,0);
+    }
+
+    /* navbar */
+    #navbar{
+        display: none;
+    }
+
+    #mobileNavbar{
+        display: flex;
+    }
+
+    #burgerMenu{
+        display: grid;
     }
 
     /* landing page */

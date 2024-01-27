@@ -20,8 +20,8 @@
         <!-- Jquery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-        <!-- Preload slideshow images-->
-        <link rel="preload" as="image" href="assets/slideshow/mona.png">
+        <!-- Favicon -->
+        <link rel="icon" href="static/assets/logo.png">
         
         <title>Careers | Singularity</title>
          
@@ -29,7 +29,7 @@
     
     <body>
         
-        <!-- NAVBAR -->
+        <!-- DESKTOP NAVBAR -->
         <div id="navbar">
             <a class="logo" href="/"><img src="static/assets/logo.png">singularity</a>
             <div class="navigation">
@@ -38,6 +38,21 @@
                 <a href="/application">Apply</a>
                 <a href="/sources">Sources</a>
             </div>
+        </div>
+
+
+        <!-- MOBILE NAVBAR -->
+        <div id="mobileNavbar">
+            <a class="logo" href="/"><img src="static/assets/logo.png"></a>
+
+            <img id="burgerToggle" onclick="toggleBurgerMenu()" src="/static/assets/svg/menu.svg">
+        </div>
+
+        <div id="burgerMenu">
+            <a href="/demo">Demo</a>
+            <a href="/careers">Careers</a>
+            <a href="/application">Apply</a>
+            <a href="/sources">Sources</a>
         </div>
 
 
@@ -93,34 +108,6 @@
                     </ul>
                 </div>
             </div>
-
-            <!--
-            
-            <div id="openPositions">
-                <h1>Open Positions</h1>
-                    <p>Apply today to join a team full of diverse, passionate, and innovative individuals all oriented towards building an AI-powered creative future.</p>
-                    <br><hr>
-                    <div class="listing">
-                        <div class="left-align">Hardware/Software Co-Design Engineer</div>
-                        <div class="right-align"><a href="/application">Apply now</a></div>
-                    </div>
-                    <div><a href="/engineer">View more information</a></div>
-                    <hr>
-                    <div class="listing">
-                        <div class="left-align">Applied AI Product Data Scientist</div>
-                        <div class="right-align"><a href="/application">Apply now</a></div>
-                    </div>
-                    <div><a href="/data">View more information</a></div>
-                    <hr>
-                    <div class="listing">
-                        <div class="left-align">Insider Risk Investigator</div>
-                        <div class="right-align"><a href="/application">Apply now</a></div>
-                    </div>
-                    <div><a href="/risk">View more information</a></div>
-            </div>
-
-            -->
-                
                 
         
 
@@ -157,6 +144,7 @@
 
         </div>
 
+        <script src="/static/scripts/navbar.js"></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
           AOS.init();

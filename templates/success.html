@@ -21,11 +21,6 @@
         <!-- Jquery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-        <!-- Preload slideshow images-->
-        <link rel="preload" as="image" href="/static/assets/slideshow/mona.png">
-        <link rel="preload" as="image" href="/static/assets/slideshow/text-gen.png">
-        <link rel="preload" as="image" href="/static/assets/slideshow/code.png">
-
         <!-- Favicon -->
         <link rel="icon" href="/static/assets/logo.png">
         
@@ -36,15 +31,30 @@
     <body>
 
 
-        <!-- NAVBAR -->
+        <!-- DESKTOP NAVBAR -->
         <div id="navbar">
-            <a class="logo" href="/"><img src="/static/assets/logo.png">singularity</a>
+            <a class="logo" href="/"><img src="static/assets/logo.png">singularity</a>
             <div class="navigation">
                 <a href="/demo">Demo</a>
                 <a href="/careers">Careers</a>
                 <a href="/application">Apply</a>
                 <a href="/sources">Sources</a>
             </div>
+        </div>
+
+
+        <!-- MOBILE NAVBAR -->
+        <div id="mobileNavbar">
+            <a class="logo" href="/"><img src="static/assets/logo.png"></a>
+
+            <img id="burgerToggle" onclick="toggleBurgerMenu()" src="/static/assets/svg/menu.svg">
+        </div>
+
+        <div id="burgerMenu">
+            <a href="/demo">Demo</a>
+            <a href="/careers">Careers</a>
+            <a href="/application">Apply</a>
+            <a href="/sources">Sources</a>
         </div>
 
 
@@ -94,6 +104,7 @@
 
         </div>
 
+        <script src="/static/scripts/navbar.js"></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
           AOS.init();

@@ -23,7 +23,6 @@ def index():
 def demo():
     return render_template("demo.html")
 
-
 @app.route("/engineer")
 def engineer():
     return render_template("engineer.html")
@@ -47,6 +46,10 @@ def application():
 @app.route("/positions")
 def positions():
     return render_template("positions.html")
+
+@app.route("/sources")
+def soruces():
+    return render_template("sources.html")
 
 
 @app.route("/submit/<inp>/<rnd>")

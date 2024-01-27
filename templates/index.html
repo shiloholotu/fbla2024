@@ -34,6 +34,7 @@
     
     <body>
 
+        <!-- DESKTOP NAVBAR -->
         <div id="navbar">
             <a class="logo" href="/"><img src="static/assets/logo.png">singularity</a>
             <div class="navigation">
@@ -42,6 +43,21 @@
                 <a href="/application">Apply</a>
                 <a href="/sources">Sources</a>
             </div>
+        </div>
+
+
+        <!-- MOBILE NAVBAR -->
+        <div id="mobileNavbar">
+            <a class="logo" href="/"><img src="static/assets/logo.png"></a>
+
+            <img id="burgerToggle" onclick="toggleBurgerMenu()" src="/static/assets/svg/menu.svg">
+        </div>
+
+        <div id="burgerMenu">
+            <a href="/demo">Demo</a>
+            <a href="/careers">Careers</a>
+            <a href="/application">Apply</a>
+            <a href="/sources">Sources</a>
         </div>
 
 
@@ -195,7 +211,8 @@
 
         </div>
 
-        
+
+        <script src="/static/scripts/navbar.js"></script>
         <script src="static/scripts/effects.js"></script>
         <script src="static/scripts/slideshow.js"></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

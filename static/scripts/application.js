@@ -9,9 +9,12 @@ function convertToHex(str){
     return ret;
 }
 
+
+// functionality for the application page
 function submitApplication(){
 
 
+    // tracks all required fields
     let filled = true;
     let unfilledElement = "";
     $('[required]').each(function() {
@@ -34,6 +37,7 @@ function submitApplication(){
     let rndKey = "";
     for(let i = 0; i <= 12; i++) rndKey += chars[parseInt(Math.random() * chars.length)];
 
+    // sends data to python server
     let dataStr = "";
     const inps = ["job","firstname","lastname","email","phone","resume","outreach","startdate","immigration","workability","additionalinfo","profile","experience"];
     for(let i of inps) dataStr += convertToHex($("#" + i).val() + ":BB:");

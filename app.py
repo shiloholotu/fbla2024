@@ -48,9 +48,12 @@ def positions():
     return render_template("positions.html")
 
 @app.route("/sources")
-def soruces():
+def sources():
     return render_template("sources.html")
 
+@app.route("/login")
+def login():
+    return render_template("login.html")
 
 @app.route("/submit/<inp>/<rnd>")
 def submit(inp,rnd):

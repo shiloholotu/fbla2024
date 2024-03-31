@@ -2,14 +2,21 @@
 <div id="navbar">
     <a class="logo" href="/"><img src="static/assets/logo.png">singularity</a>
     <div class="navigation">
-        <a href="/demo">Demo</a>
-        <a href="/careers">Careers</a>
-        <a href="/application">Apply</a>
-        <a href="/sources">Sources</a>
-        <a href="/login">Login</a>
+        <a class="nav-link" href="/demo">Demo</a>
+        <a class="nav-link" href="/careers">Careers</a>
+        <a class="nav-link" href="/application">Apply</a>
+        <a class="nav-link" href="/sources">Sources</a> 
+        <button class="nav-link" onclick="showLoginForm()">Login</button>
     </div>
 </div>
 
+<style>
+    div button {
+        text-decoration: none;
+        background: none;
+        border: none;
+    }
+</style>
 
 <!-- MOBILE NAVBAR -->
 <div id="mobileNavbar">
@@ -19,9 +26,12 @@
 </div>
 
 <div id="burgerMenu">
-    <a href="/demo">Demo</a>
-    <a href="/careers">Careers</a>
-    <a href="/application">Apply</a>
+    <a class="nav-link" href="/demo">Demo</a>
+    <a class="nav-link" href="/careers">Careers</a>
+    <a class="nav-link" href="/application">Apply</a>
+    <a class="nav-link" href="/sources">Sources</a>
     <a href="/sources">Sources</a>
-    <a href="/login">Login</a>
+    <button class="nav-link" onclick="showLoginForm()">Login</button>
 </div>
+
+{% include 'login.html' %}

@@ -51,9 +51,6 @@ def positions():
 def sources():
     return render_template("sources.html")
 
-@app.route("/login")
-def login():
-    return render_template("login.html")
 
 @app.route("/submit/<inp>/<rnd>")
 def submit(inp,rnd):

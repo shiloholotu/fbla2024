@@ -210,7 +210,7 @@ p .purpText{
     margin-right: 100px;
 }
 
-#navbar div a, #burgerMenu a{
+#navbar .nav-link, #burgerMenu a{
     text-decoration: none;
     color:var(--font-color);
     font-size: 18px;
@@ -222,7 +222,7 @@ p .purpText{
     display: inline-block;
 }
 
-#navbar div a:hover{
+#navbar .nav-link:hover{
     transform:translate(0,-2px);
     opacity: 1;
 }

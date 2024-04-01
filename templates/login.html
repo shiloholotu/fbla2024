@@ -1,13 +1,15 @@
 <!-- login.html -->
 <div id="loginForm" class="overlay" style="display: none;">
     <div class="container">
-        <label for="uname"><b>Username</b></label>
-        <input type="text" placeholder="Enter Username" name="uname" required>
-
-        <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" required>
-
-        <button type="submit">Login</button>
+        <form method="POST" action="{{ url_for('auth.login') }}">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        
+            <input type="submit" value="Login">
+        </form>
         <button type="button" onclick="hideLoginForm()">Close</button>
     </div>
 </div>

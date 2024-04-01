@@ -1,9 +1,11 @@
+import firebase_admin
 from flask import Flask, request, jsonify, render_template
 from firebase_admin import db, credentials
-import firebase_admin
+from auth.login import auth as auth_blueprint
 
 app = Flask(__name__)
 
+app.register_blueprint(auth_blueprint, url_prefix='/auth')
 
 cred = credentials.Certificate("key.json")
 firebase_admin.initialize_app(cred, {"databaseURL":"https://fbla-decfd-default-rtdb.firebaseio.com/"})
@@ -12,8 +14,6 @@ ref = db.reference("/")
 
 def decodeHex(hstr):
     return bytes.fromhex(hstr).decode("utf-8")
-
-
 
 @app.route("/")
 def index():

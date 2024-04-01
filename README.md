@@ -7,7 +7,7 @@ To install and run this project, follow these steps:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/fbla-project.git
+git clone https://github.com/shiloholotu/fbla2024.git
 cd fbla-project
 ```
 

@@ -1,4 +1,3 @@
-// list of slideshow content
 const slides = [
     [
         "Unleash your artistic <span class='purpText'>Creativity.</span>",

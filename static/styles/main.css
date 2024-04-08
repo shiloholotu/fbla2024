@@ -325,6 +325,12 @@ p .purpText{
     padding-right: 30px;
     background: var(--font-color);
     margin-top:40px;
+    box-shadow: 0 0 50px rgb(159,48,253,.34);
+}
+
+#getStarted:hover{
+    transform: translate(0,-2px);
+    opacity: .6;
 }
 
 
@@ -961,4 +967,69 @@ label {
         display: flex;
         justify-content: center;
     }
+}
+
+/* LOGIN CSS */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100000;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    z-index: 100000;
+    width: max(30vw,400px);
+    padding: 16px;
+    background-color: rgba(240, 240, 240, 0.8); /* semi-transparent white */
+    border-radius: 4px;
+}
+.container input {
+    display: block;
+    font-family: "Poppins";
+    margin-bottom: 10px;
+    width: max(28vw,350px);
+    height: 12px;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid rgb(0,0,50,0.2);
+    outline: none;
+}
+#closeModal {
+    cursor: pointer;
+}
+
+#loginButton {
+    margin:auto;
+    margin-top: 20px;
+    display: flex;
+    height: fit-content;
+    font-family: 'Poppins';
+    text-decoration: none;
+    padding: 8px;
+    width: fit-content;
+    font-size: 16px;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: var(--font-color);
+    color: white;
+    border:none;
+    outline:none;
+    cursor: pointer;
+}  
+
+#closeModal {
+    margin-top: 10px;
+    font-family: 'Poppins';
+    text-decoration: none;
+    font-size: 16px;
+    color: gray;
 }

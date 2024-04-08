@@ -220,10 +220,11 @@ p .purpText{
     transition: .25s;
     cursor: pointer;
     display: inline-block;
+    font-family: 'Poppins';
 }
 
 #burgerMenu .nav-link{
-    margin-left:0;
+    margin:0;
 }
 
 #navbar .nav-link:hover{

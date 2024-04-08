@@ -327,6 +327,7 @@ p .purpText{
     background: var(--font-color);
     margin-top:40px;
     box-shadow: 0 0 50px rgb(159,48,253,.34);
+    transition:.25s;
 }
 
 #getStarted:hover{

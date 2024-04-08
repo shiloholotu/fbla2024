@@ -1,5 +1,8 @@
 # fbla2024
-By Ben Nolan Shiloh
+By:
+Ben
+Nolan
+Shiloh
 ## Installation
 
 To install and run this project, follow these steps:

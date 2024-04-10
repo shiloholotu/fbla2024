@@ -9,7 +9,7 @@ cred = None
 try:
     cred = credentials.Certificate("key.json")
 except:
-    cred = credentials.Certificate(json.loads(decrypt(os.environ.get("API_KEY"))))
+    cred = credentials.Certificate(json.loads(os.environ.get("API_KEY")))
 firebase_admin.initialize_app(cred, {"databaseURL":"https://fbla-decfd-default-rtdb.firebaseio.com/"})
 
 ref = db.reference("/")

@@ -1,10 +1,15 @@
 import firebase_admin
 from flask import Flask, render_template, request, url_for, redirect
 from firebase_admin import db, credentials
+import json
+import os
 
 app = Flask(__name__)
-
-cred = credentials.Certificate("key.json")
+cred = None
+try:
+    cred = credentials.Certificate("key.json")
+except:
+    cred = credentials.Certificate(json.loads(decrypt(os.environ.get("API_KEY"))))
 firebase_admin.initialize_app(cred, {"databaseURL":"https://fbla-decfd-default-rtdb.firebaseio.com/"})
 
 ref = db.reference("/")

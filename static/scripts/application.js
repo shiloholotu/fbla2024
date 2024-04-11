@@ -22,12 +22,14 @@ function submitApplication(){
             if(filled){
                 filled = false;
                 unfilledElement = $(this).attr("id");
+                console.log(unfilledElement);
             }
         }
     })
     if (!filled){
         alert("Please fill all fields!");
         // scroll to first unfilled required field
+        console.log(unfilledElement)
         window.scrollTo(0, document.getElementById(unfilledElement).offsetTop - 200);
         return;
     }

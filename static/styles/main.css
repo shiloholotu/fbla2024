@@ -2,6 +2,10 @@
 :root{
     --main-purple:#9f30fd;
     --font-color:rgb(42,41,85);
+    --transparent-border-color: rgb(0,0,50,0.15);
+    --background-color: rgb(255,255,255);
+    --navbar-color: rgb(255,255,255,0.85);
+    --footer-color: rgb(26,26,51);
 }
 
 html {
@@ -11,11 +15,12 @@ body{
     font-family: 'Poppins';
     color:var(--font-color);
     margin:0;
+    background:var(--background-color);
 }
 
 
 .purpText{
-    color:#9f30fd;
+    color:var(--main-purple);
 }
 
 p .purpText{
@@ -26,7 +31,7 @@ p .purpText{
 
 /* footer */
 #footer{
-    background:rgb(26 26 51);
+    background:var(--footer-color);
     display: flex;
     justify-content: space-evenly;
     padding:43px;
@@ -73,7 +78,7 @@ p .purpText{
     font-size: min(100px,7vw);
     line-height: 80%;
     text-transform: uppercase;
-    color: rgb(42 41 85);
+    color: var(--font-color);
     margin-bottom: 30px;
     text-align: center;
 }
@@ -91,7 +96,7 @@ p .purpText{
 .sectionHeader a{
     font-family: 'Poppins';
     text-decoration: none;
-    color: white;
+    color: var(--background-color);
     padding: 12px;
     display: block;
     width: fit-content;
@@ -158,7 +163,7 @@ p .purpText{
     font-size: 70px;
     line-height: 70px;
     text-transform: uppercase;
-    color: rgb(42 41 85);
+    color: var(--font-color);
 }
 
 #slideshow div{
@@ -182,8 +187,8 @@ p .purpText{
     position: sticky;
     z-index: 99999;
     top: 0;
-    border-bottom: 2px solid rgb(0,0,50,0.1);
-    background: rgb(255,255,255,0.85);
+    border-bottom: 2px solid var(--transparent-border-color);
+    background: var(--navbar-color);
     backdrop-filter: blur(8px);
     padding-left: 40px;
 }
@@ -242,8 +247,8 @@ p .purpText{
     justify-content: space-between;
     align-items: center;
     padding:15px;
-    border-bottom: 2px solid rgb(0,0,50,0.1);
-    background: rgb(255,255,255,0.85);
+    border-bottom: 2px solid var(--transparent-border-color);
+    background: var(--navbar-color);
     backdrop-filter: blur(8px);
 }
 
@@ -257,7 +262,7 @@ p .purpText{
     display: none;
     justify-items: center;
     align-content: center;
-    background: rgb(255,255,255,0.85);
+    background: var(--navbar-color);
     backdrop-filter: blur(8px);
     top: 0;
     bottom: 0;
@@ -292,7 +297,7 @@ p .purpText{
     font-size: min(100px,7vw);
     line-height: 80%;
     text-transform: uppercase;
-    color: rgb(42 41 85);
+    color: var(--font-color);
     margin-bottom:30px;
 }
 
@@ -316,7 +321,7 @@ p .purpText{
 #getStarted{
     font-family: 'Poppins';
     text-decoration: none;
-    color: white;
+    color: var(--background-color);
     padding: 12px;
     display: block;
     width: fit-content;
@@ -326,7 +331,7 @@ p .purpText{
     padding-right: 30px;
     background: var(--font-color);
     margin-top:40px;
-    box-shadow: 0 0 50px rgb(159,48,253,.34);
+    box-shadow: 0 0 50px rgb(159,48,253,.44);
     transition:.25s;
 }
 
@@ -350,12 +355,12 @@ p .purpText{
 #pricingOptions div{
     max-width: 300px;
     border-radius: 15px;
-    border: 2px solid rgb(0,0,50,0.15);
+    border: 2px solid var(--transparent-border-color);
     padding:15px;
     padding-left: 30px;
     padding-right: 30px;
     flex:1;
-    box-shadow: 0px 5px 20px rgb(0,0,50,0.1);
+    box-shadow: 0px 5px 20px var(--transparent-border-color);
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -448,7 +453,7 @@ p .purpText{
     border: none;
     transition: .25s;
     cursor: pointer;
-    color: white;
+    color: var(--background-color);
     box-shadow: 0 0 50px rgb(159,48,253,.34);
 }
 
@@ -466,7 +471,7 @@ p .purpText{
     display: block;
     margin: auto;
     border: 5px solid;
-    box-shadow: 0 20px 50px rgb(0,0,50,0.3);
+    box-shadow: 0 20px 50px var(--transparent-border-color);
 }
 
 /* demo code generation */
@@ -485,9 +490,9 @@ p .purpText{
     max-width: 800px;
     margin:auto;
     border-radius: 20px;
-    border: 2px solid rgb(0,0,50,0.1);
+    border: 2px solid var(--transparent-border-color);
     padding:20px;
-    box-shadow: 0 20px 20px rgb(0,0,50,0.1);
+    box-shadow: 0 20px 20px var(--transparent-border-color);
 }
 
 #demoSpace div p{
@@ -501,7 +506,7 @@ p .purpText{
 #demoSpace h3{
     color:rgb(148 148 170);
     font-weight: 600;
-    border-bottom: 2px solid rgb(0,0,50,0.2);
+    border-bottom: 2px solid var(--transparent-border-color);
     padding-bottom: 15px;
     margin:0;
 
@@ -544,8 +549,8 @@ select {
     outline: none;
 }
 
-/* JOB LISTING PAGES */
-.jobStuff {
+/* SOURCE FORMATTING */
+.sources {
     justify-content: left;
     align-items: center;
     width: 80%;
@@ -554,47 +559,24 @@ select {
     margin-bottom:50px;
 }
 
-.jobStuff h1{
+.sources h1{
     font-family: 'Kanit';
     font-size: min(100px,6vw);
     line-height: 80%;
-    color: rgb(42 41 85);
+    color: var(--font-color);
     margin-bottom:30px;
 }
 
-.jobstuff h2 {
-    font-weight: lighter;
-}
-
-.jobStuff p{
+.sources p{
     margin:0;
 }
 
-.jobStuff .backto {
+.sources a{
     color: var(--font-color);
 }
 
-.jobStuff .salaryrange{
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.jobStuff .paragraph {
-    margin-bottom: 5vh;
-}
-
-.jobStuff .apply {
-    font-family: 'Poppins';
-    text-decoration: none;
-    padding: 12px;
-    display: block;
-    width: fit-content;
-    font-size: 20px;
-    border-radius: 20px;
-    padding-left: 30px;
-    padding-right: 30px;
-    background: var(--font-color);
-    color: white;
+.sources a:visited{
+    color: var(--font-color);
 }
 
 /* REVIEWS */
@@ -604,12 +586,12 @@ select {
     max-width: 800px;
     margin: auto;
     border-radius: 15px;
-    border: 2px solid rgb(0,0,50,0.15);
+    border: 2px solid var(--transparent-border-color);
     padding: 10px;
     align-items: center;
     border-radius: 100px;
     margin-bottom: 20px;
-    box-shadow: 0px 5px 20px rgb(0,0,50,0.1);
+    box-shadow: 0px 5px 20px var(--transparent-border-color);
 }
 
 .reviewFace{
@@ -662,7 +644,7 @@ select {
     font-family: 'Kanit';
     font-size: min(50px,7vw);
     line-height: 80%;
-    color: rgb(42 41 85);
+    color: var(--font-color);
     margin-bottom:30px;
     text-align: left;
 }
@@ -683,59 +665,6 @@ select {
     min-width: 100%;
 }
 
-#openPositions {
-    width: 90%;
-    margin: auto;
-    margin-top: 80px;
-    margin-bottom:30px;
-}
-
-#openPositions h1 {
-    font-family: 'Kanit';
-    font-size: min(50px,7vw);
-    line-height: 80%;
-    color: rgb(42 41 85);
-    margin-bottom:30px;
-    text-align: left;
-}
-
-#openPositions p{
-    font-size: 20px;
-    margin:0;
-    opacity: .8;
-}
-
-#openPositions hr{
-    opacity: 0.6;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-}
-
-.listing {
-    display: flex;
-    justify-content: space-between;
-}
-
-.listing .left-align {
-    display: inline-block;
-    text-align: left;
-    font-weight: bold;
-}
-
-.listing .right-align {
-    display: inline-block;
-    text-align: right;
-}
-
-#openPositions a {
-    opacity: 1;
-    color: var(--font-color);
-    font-family: "Poppins";
-}
-#openPositions a:visited{
-    color: var(--font-color);   
-}
-
 #benefits {
     display: flex;
     width: 80%;
@@ -746,12 +675,12 @@ select {
 
 #benefits div{
     padding: 20px;
-    border: 2px solid rgb(0,0,50,0.2);
+    border: 2px solid var(--transparent-border-color);
     margin-right: 20px;
     flex: 1;
     max-width: 200px;
     border-radius: 14px;
-    box-shadow: 0px 5px 20px rgb(0,0,50,0.1);
+    box-shadow: 0px 5px 20px var(--transparent-border-color);
 }
 #benefits strong{
     font-size: 20px;
@@ -796,7 +725,7 @@ select {
     height: 20px;
     padding: 10px;
     border-radius: 12px;
-    border: 1px solid rgb(0,0,50,0.2);
+    border: 1px solid var(--transparent-border-color);
     outline: none;
 }
 
@@ -815,7 +744,7 @@ label {
     padding:10px;
     outline:none;
     border-radius: 12px;
-    border: 1px solid rgb(0,0,50,0.2);
+    border: 1px solid var(--transparent-border-color);
     outline: none;
     font-family: 'Poppins';
     resize: none;
@@ -834,7 +763,7 @@ label {
     padding-left: 30px;
     padding-right: 30px;
     background: var(--font-color);
-    color: white;
+    color: var(--background-color);
     border:none;
     outline:none;
     cursor: pointer;
@@ -990,7 +919,7 @@ label {
     z-index: 100000;
     width: max(30vw,400px);
     padding: 16px;
-    background-color: rgba(240, 240, 240, 0.8); /* semi-transparent white */
+    background-color: var(--background-color);
     border-radius: 4px;
 }
 .container input {
@@ -1001,7 +930,7 @@ label {
     height: 12px;
     padding: 10px;
     border-radius: 12px;
-    border: 1px solid rgb(0,0,50,0.2);
+    border: 1px solid var(--transparent-border-color);
     outline: none;
 }
 #closeModal {
@@ -1022,7 +951,7 @@ label {
     padding-left: 15px;
     padding-right: 15px;
     background: var(--font-color);
-    color: white;
+    color: var(--background-color);
     border:none;
     outline:none;
     cursor: pointer;
@@ -1034,4 +963,90 @@ label {
     text-decoration: none;
     font-size: 16px;
     color: gray;
+}
+
+.position{
+    width: 80%;
+    margin: auto;
+    max-width: 600px;
+    border: 2px solid var(--transparent-border-color);
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    box-shadow: 0px 5px 20px var(--transparent-border-color);
+}
+
+.position h2{
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.position h3{
+    font-weight: 600;
+}
+
+.loc{
+    margin-top:0;
+}
+
+.position div {
+    padding: 15px;
+    border: 2px solid var(--transparent-border-color);
+    border-radius: 15px;
+    background: var(--transparent-border-color);
+    display: none;
+    margin-top: 25px;
+}
+
+.toggleView{
+    background: var(--main-purple);
+    width: fit-content;
+    padding: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+    border-radius: 11px;
+    transition: .25s;
+    cursor: pointer;
+    font-family: 'Poppins';
+    font-size: 16px;
+    border:none;
+}
+
+.position a{
+    background: var(--font-color);
+    width: fit-content;
+    padding: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: var(--background-color);
+    border-radius: 11px;
+    text-decoration: none;
+    margin: auto;
+    display: block;
+    transition: .25s;
+    cursor: pointer;
+}
+
+.position a:hover, .toggleView:hover{
+    opacity: .8;
+}
+
+#modeButton {
+    cursor:pointer;
+    color: var(--font-color);
+    opacity: 0.8;
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: 25px;
+    opacity: .8;
+    transition: .25s;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    margin-bottom: 6px;
+}
+
+#modeButton:hover{
+    transform:translate(0,-2px);
+    opacity: 1;
 }

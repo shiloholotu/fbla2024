@@ -1,6 +1,6 @@
 const slides = [
     [
-        "Unleash your artistic <span class='purpText'>Creativity.</span>",
+        "Unleash your <span class='purpText'>Creativity.</span>",
         "mona.png",
         `Here at Singularity, we work to enable creativity and expression through our Image-Generation Service. Our users can use natural language prompts to generate new images, 
         combine unique styles, and find inspiration for their own art. The service functions through a Generative Adversarial Network (GAN), 

@@ -1,0 +1,125 @@
+:root{
+    --main-purple:#9f30fd;
+    --font-color:rgb(42,41,85);
+    --transparent-border-color: rgb(0,0,50,0.15);
+    --background-color: rgb(255,255,255);
+    --navbar-color: rgb(255,255,255,0.85);
+    --footer-color: rgb(26,26,51);
+}
+
+.confirmation {
+    display: none;
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    border-radius: 15px;
+}
+
+
+.contactHeader {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 80px;
+}
+
+.contactHeader h1 {
+    font-family: 'Kanit';
+    font-size: min(80px,7vw);
+    line-height: 80%;
+    text-transform: uppercase;
+    color: var(--font-color);
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.contactHeader p {
+    opacity: 0.7;
+    margin-top: 0px;
+}
+
+.contactUs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom:30px;
+}
+
+#contactForm{
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-self: center;
+}
+
+.contactUs div {
+    width: min(800px,80%);
+}
+
+.contactUs input {
+    display: block;
+    font-family: "Poppins";
+    margin-bottom: 3vh;
+    width: 100%;
+    height: 20px;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid var(--transparent-border-color);
+    outline: none;
+}
+
+label {
+    display:block;
+    margin-bottom: 1vh;
+    line-height: 1.8;
+}
+
+textarea {
+    display: block;
+    font-family: "Poppins";
+    margin-bottom: 3vh;
+    width: 100%;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid var(--transparent-border-color);
+    outline: none;
+}
+
+input[type="submit"]{
+    margin:auto;
+    margin-top: 10px;
+    display: flex;
+    height: fit-content;
+    font-family: 'Poppins';
+    text-decoration: none;
+    padding: 12px;
+    width: fit-content;
+    font-size: 16px;
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: var(--font-color);
+    color: var(--background-color);
+    border:none;
+    outline:none;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+input[type="submit"]:hover {
+    transform: translate(0, -3px);
+    opacity: 0.8;
+}

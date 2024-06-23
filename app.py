@@ -45,6 +45,10 @@ def sources():
 def aboutus():
     return render_template("aboutus.html")
 
+@app.route("/contact")
+def contact():
+    return render_template("contact.html")
+
 @app.route("/submit/<inp>/<rnd>")
 def submit(inp,rnd):
     data = ["job","firstname","lastname","email","phone","resume","outreach","startdate","immigration","workability","additionalinfo","profile","experience"]

@@ -25,18 +25,6 @@ def index():
 def demo():
     return render_template("demo.html")
 
-@app.route("/engineer")
-def engineer():
-    return render_template("engineer.html")
-
-@app.route("/data")
-def data():
-    return render_template("data.html")
-
-@app.route("/risk")
-def risk():
-    return render_template("risk.html")
-
 @app.route("/careers")
 def careers():
     return render_template("careers.html")
@@ -53,6 +41,9 @@ def positions():
 def sources():
     return render_template("sources.html")
 
+@app.route("/aboutus")
+def aboutus():
+    return render_template("aboutus.html")
 
 @app.route("/submit/<inp>/<rnd>")
 def submit(inp,rnd):
@@ -65,4 +56,4 @@ def submit(inp,rnd):
     return render_template("success.html")
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)

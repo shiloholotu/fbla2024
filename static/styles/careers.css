@@ -1,0 +1,149 @@
+:root{
+    --main-purple:#9f30fd;
+    --font-color:rgb(42,41,85);
+    --transparent-border-color: rgb(0,0,50,0.15);
+    --background-color: rgb(255,255,255);
+    --navbar-color: rgb(255,255,255,0.85);
+    --footer-color: rgb(26,26,51);
+}
+
+.careersHeader{
+    height: 70vh;
+    background-image: url("../assets/careers.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment:scroll;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom:70px;
+}
+
+.careersHeader div {
+    width: 90%;
+}
+
+.careersHeader div h1{
+    font-family: 'Kanit';
+    font-size: min(100px,7vw);
+    line-height: 80%;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 30px;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+}
+
+.careersHeader div p{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin: 0;
+    width: min(75%,800px);
+    margin: auto;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); 
+}
+
+.careersHeader div a{
+    font-family: 'Poppins';
+    text-decoration: none;
+    color: rgb(42,41,85);
+    padding: 12px;
+    display: block;
+    width: fit-content;
+    font-size: 20px;
+    border-radius: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: white;
+    margin:auto;
+    margin-top: 40px;
+    box-shadow: 0 0 50px rgb(255,255,255,.44);
+    transition: .25s;
+}
+
+.careersHeader div a:hover{
+    transform: translate(0,-3px);
+    box-shadow: 0 0 50px rgb(42,41,85,.44);
+
+}
+
+.companyInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom:30px;
+}
+
+.companyInfo h1{
+    font-family: 'Kanit';
+    font-size: min(50px,7vw);
+    line-height: 80%;
+    color: var(--font-color);
+    margin-bottom:30px;
+    text-align: left;
+}
+
+.companyInfo p{
+    font-size: 20px;
+    margin:0;
+    opacity: .8;
+}
+
+.companyInfo hr{
+    opacity: 0.6;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.companyInfo div{
+    min-width: 100%;
+}
+
+#benefits {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    max-width: 800px;
+    margin-bottom: 30px;
+}
+
+#benefits div{
+    padding: 20px;
+    border: 2px solid var(--transparent-border-color);
+    margin-right: 20px;
+    flex: 1;
+    max-width: 200px;
+    border-radius: 14px;
+    box-shadow: 0px 5px 20px var(--transparent-border-color);
+    transition: .25s;
+}
+
+#benefits div:hover {
+    border: 2px solid var(--font-color);
+    transform: translate(0,-4px);
+}
+
+#benefits strong{
+    font-size: 20px;
+    margin: 0;
+    font-weight: 600;
+    text-align: center;
+}
+
+#benefits ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#benefits li::before{
+    content: "\2713";
+    display: inline-block;
+    width: 1.5em;
+}

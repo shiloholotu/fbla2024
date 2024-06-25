@@ -1,0 +1,139 @@
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom:30px;
+}
+
+.about h1{
+    font-family: 'Kanit';
+    font-size: min(50px,7vw);
+    line-height: 80%;
+    color: var(--font-color);
+    margin-bottom:30px;
+    text-align: left;
+}
+
+.about p{
+    font-size: 20px;
+    margin:0;
+    opacity: .8;
+}
+
+.about hr{
+    opacity: 0.6;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.about div{
+    min-width: 100%;
+}
+
+/* ABOUT US */
+#teamHeader {
+    font-family: 'Kanit';
+    font-size: min(50px,7vw);
+    line-height: 80%;
+    color: var(--font-color);
+    text-align: left;
+    margin-bottom: 5px;
+
+}
+
+.teamMember {
+    display: flex;
+    width: min(1000px,80%);
+    margin: auto;
+    border: 2px solid var(--transparent-border-color);
+    padding: 10px;
+    align-items: center;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 5px 20px var(--transparent-border-color);
+}
+
+.teamMember h1 {
+    font-weight: 600;
+    margin: 0;
+    margin-left: 15px;
+    font-size: 28px;
+}
+
+.teamMember p {
+    margin: 0;
+    margin-top: 3px;
+    margin-left: 15px;
+    font-size: 16px;
+}
+
+.lighter {
+    opacity: 0.5;
+}
+
+.teamFace {
+    width: 160px;
+    height: 160px;
+    margin-right: 6px;
+    display: block;
+    margin-left: auto;
+    margin-left: 16px;
+    border-radius: 10px;
+    border: 3px solid var(--transparent-border-color);
+
+}
+
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    } 
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.partners {
+    width: 1200px;
+    margin: auto;
+    padding: 60px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.logos-slide {
+    display: inline-block;
+    animation: 20s slide infinite linear;
+}
+
+.partners:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255,255,255,0),white);
+    content: "";
+    z-index: 2;
+}
+
+.partners:after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255,255,255,0),white);
+    content: "";
+    z-index: 2;
+}
+
+.logos-slide img {
+    height: 50px;
+    margin: 0 40px;
+}

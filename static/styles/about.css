@@ -1,3 +1,12 @@
+:root{
+    --main-purple:#9f30fd;
+    --font-color:rgb(42,41,85);
+    --transparent-border-color: rgb(0,0,50,0.15);
+    --background-color: rgb(255,255,255);
+    --navbar-color: rgb(255,255,255,0.85);
+    --footer-color: rgb(26,26,51);
+}
+
 .about {
     display: flex;
     justify-content: center;
@@ -42,7 +51,6 @@
     color: var(--font-color);
     text-align: left;
     margin-bottom: 5px;
-
 }
 
 .teamMember {
@@ -55,6 +63,12 @@
     border-radius: 20px;
     margin-bottom: 20px;
     box-shadow: 0px 5px 20px var(--transparent-border-color);
+    transition: 0.25s;
+}
+
+.teamMember:hover {
+    transform: translateY(-3px);
+    border: 2px solid var(--main-purple);
 }
 
 .teamMember h1 {
@@ -84,7 +98,6 @@
     margin-left: 16px;
     border-radius: 10px;
     border: 3px solid var(--transparent-border-color);
-
 }
 
 

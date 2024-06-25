@@ -55,7 +55,7 @@ p .purpText{
 }
 /* handle of scrollbar */
 ::-webkit-scrollbar-thumb {
-    background: transparent;
+    background: var(--main-purple);
     border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
@@ -82,12 +82,14 @@ p .purpText{
     cursor: pointer;
     opacity: .5;
     transition: .3s;
+    z-index: 501;
 }
 
 .scroll-button img{
     width:17px;
     opacity:.6;
     transform:translate(0,2px);
+    z-index: 501;
 }
 
 .scroll-button:hover {

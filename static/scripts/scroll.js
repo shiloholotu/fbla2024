@@ -21,8 +21,8 @@ window.addEventListener('scroll', function() {
     var scrollPosition = window.scrollY;
 
     if(scrollPosition >= 2651){
-        scrollButton.innerHTML = "&uarr;";
+        scrollButton.innerHTML = "<img src='static/assets/svg/down.png' style='width:17px;opacity:.6;transform:translate(0,2px)'>";
     } else {
-        scrollButton.innerHTML = "&darr;";
+        scrollButton.innerHTML = "<img src='static/assets/svg/down.png' style='width:17px;opacity:.6;transform:translate(0,2px)'>";
     }
 })

@@ -9,6 +9,18 @@
     --footer-color: rgb(26,26,51);
 }
 
+.purpleSection{
+
+    --navbar-color: rgb(159 48 253 / 85%);
+    --footer-color: rgb(10,10,12);
+    background: var(--main-purple);
+
+}
+
+.purpleSection .purpText{
+    color: white;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -64,12 +76,18 @@ p .purpText{
     height: 50px;
     background-color: var(--background-color);
     color: var(--font-color);
-    border: 3px solid var(--transparent-border-color);
+    border: 3px solid black;
     border-radius: 50%;
     font-size: 24px;
     cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s;
+    opacity: .5;
+    transition: .3s;
+}
+
+.scroll-button img{
+    width:17px;
+    opacity:.6;
+    transform:translate(0,2px);
 }
 
 .scroll-button:hover {
@@ -124,7 +142,7 @@ p .purpText{
 
 .sectionHeader h1{
     font-family: 'Kanit';
-    font-size: min(100px,7vw);
+    font-size: 80px;
     line-height: 80%;
     text-transform: uppercase;
     color: var(--font-color);
@@ -245,6 +263,7 @@ p .purpText{
     background: var(--navbar-color);
     backdrop-filter: blur(8px);
     padding-left: 40px;
+    transition:.4s;
 }
 
 
@@ -410,15 +429,27 @@ p .purpText{
 #pricingOptions div{
     max-width: 300px;
     border-radius: 15px;
-    border: 2px solid var(--transparent-border-color);
     padding:15px;
     padding-left: 30px;
     padding-right: 30px;
     flex:1;
-    box-shadow: 0px 5px 20px var(--transparent-border-color);
     margin-left: 10px;
     margin-right: 10px;
+    background:var(--font-color);
+    color:white;
+    border: 2px solid transparent;
+    transition: .5s;
+    cursor: pointer;
 }
+
+
+
+#pricingOptions div:hover{
+    transform: translate(0,-10px);
+    border: 2px solid rgb(255,255,255,0.65);
+}
+
+
 
 #pricingOptions h2{
     font-family: 'Kanit';
@@ -440,20 +471,45 @@ p .purpText{
 
 /* pro option */
 #mostPopular{
-    background: var(--main-purple);
     padding: 6px;
     padding-left: 20px;
-    padding-right: 20px;
+    padding-right: 10px;
     width: fit-content;
     margin: auto;
-    color: white;
-    font-weight: 600;
-    border-radius: 15px;
+    color: #e4ffdf;
+    /* font-weight: 600; */
+    border-radius: 10px;
     font-size: 18px;
+    transform: translate(70px, -30px);
+    border: 2px solid rgb(255, 255, 255, 0.4);
+    background: white;
+    color: var(--font-color);
+    font-weight: 600;
+}
+
+#mostPopular img{
+    width: 22px;
+    vertical-align: middle;
+    margin-top:-3px;
+    margin-left: 5px;
+    animation: spin 6s linear infinite;
+}
+
+@keyframes spin{
+    100%{
+        transform:rotate(360deg); 
+    }
 }
 
 
-#proOption{transform:translate(0px,-30px);}
+#proOption{
+    transform:translate(0px,-30px);
+    border: 2px solid rgb(255,255,255,0.65) !important;
+    box-shadow: 0 0 350px rgb(255,255,255,0.2);
+}
+#proOption:hover{
+    transform: translate(0,-40px) !important;
+}
 #proOption h2{margin-top:10px;}
 
 
@@ -641,12 +697,21 @@ select {
     max-width: 800px;
     margin: auto;
     border-radius: 15px;
-    border: 2px solid var(--transparent-border-color);
+    border: none;
     padding: 10px;
     align-items: center;
-    border-radius: 100px;
-    margin-bottom: 20px;
-    box-shadow: 0px 5px 20px var(--transparent-border-color);
+    border-radius: 100px 100px 10px 100px;
+    margin-bottom: 50px;
+    box-shadow: 0px 5px 20px rgb(0, 0, 0, 0.4);
+    
+    background: white;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.review:hover{
+    box-shadow: 0px 15px 50px rgb(0, 0,50, 0.4);
+    transform:translate(0,-5px);
 }
 
 .reviewFace{
@@ -666,12 +731,23 @@ select {
 .review h3 span{
     font-size: 30px;
     opacity: .6;
+    transform: translate(0, 15px);
 }
 
 .review p{
-    margin:0;
+    margin: 0;
     font-weight: 600;
-    opacity: .5;
+    /* opacity: .5; */
+    background: var(--font-color);
+    width: fit-content;
+    color: white;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    transform: translate(0, 30px);
 }
 
 .reviewStar{

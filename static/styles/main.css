@@ -76,12 +76,18 @@ p .purpText{
     height: 50px;
     background-color: var(--background-color);
     color: var(--font-color);
-    border: 3px solid var(--transparent-border-color);
+    border: 3px solid black;
     border-radius: 50%;
     font-size: 24px;
     cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s;
+    opacity: .5;
+    transition: .3s;
+}
+
+.scroll-button img{
+    width:17px;
+    opacity:.6;
+    transform:translate(0,2px);
 }
 
 .scroll-button:hover {
@@ -431,7 +437,19 @@ p .purpText{
     margin-right: 10px;
     background:var(--font-color);
     color:white;
+    border: 2px solid transparent;
+    transition: .5s;
+    cursor: pointer;
 }
+
+
+
+#pricingOptions div:hover{
+    transform: translate(0,-10px);
+    border: 2px solid rgb(255,255,255,0.65);
+}
+
+
 
 #pricingOptions h2{
     font-family: 'Kanit';
@@ -455,25 +473,42 @@ p .purpText{
 #mostPopular{
     padding: 6px;
     padding-left: 20px;
-    padding-right: 20px;
+    padding-right: 10px;
     width: fit-content;
     margin: auto;
     color: #e4ffdf;
     /* font-weight: 600; */
     border-radius: 10px;
     font-size: 18px;
-    transform: translate(80px, -30px);
+    transform: translate(70px, -30px);
     border: 2px solid rgb(255, 255, 255, 0.4);
     background: white;
     color: var(--font-color);
     font-weight: 600;
 }
 
+#mostPopular img{
+    width: 22px;
+    vertical-align: middle;
+    margin-top:-3px;
+    margin-left: 5px;
+    animation: spin 6s linear infinite;
+}
+
+@keyframes spin{
+    100%{
+        transform:rotate(360deg); 
+    }
+}
+
 
 #proOption{
     transform:translate(0px,-30px);
-    border: 2px solid rgb(255,255,255,0.65);
+    border: 2px solid rgb(255,255,255,0.65) !important;
     box-shadow: 0 0 350px rgb(255,255,255,0.2);
+}
+#proOption:hover{
+    transform: translate(0,-40px) !important;
 }
 #proOption h2{margin-top:10px;}
 

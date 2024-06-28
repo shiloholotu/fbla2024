@@ -2,6 +2,7 @@
 
 :root{
     --main-purple:#9f30fd;
+    --dark-purple:#7917cf;
     --font-color:rgb(42,41,85);
     --transparent-border-color: rgb(0,0,50,0.15);
     --background-color: rgb(255,255,255);
@@ -61,7 +62,7 @@ p .purpText{
     border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
-    background: #7917cf;
+    background: var(--dark-purple);
 }
   
 /* scroll button */
@@ -518,6 +519,61 @@ p .purpText{
 
 
 /* TRY IT OUT PAGE */
+
+/* sliding gallery */
+.photoGallery{
+    width: 80%;
+    display: flex;
+    max-width: 1000px;
+    overflow: hidden;
+    margin: auto;
+    white-space: nowrap;
+    position: relative;
+    
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    } 
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.photoGallery::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 100%;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), var(--background-color));
+    content: "";
+    z-index: 2;
+}
+
+.photoGallery::after{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), var(--background-color));
+    content: "";
+    z-index: 2;
+}
+
+.photoSlide{
+    display: flex;
+    animation: slide 30s linear infinite;
+}
+
+.photoSlide img{
+    width: 250px;
+    margin:10px;
+    border-radius: 10px;
+    
+}
 
 /* drop downs */
 .demoPrompt{
@@ -1048,15 +1104,69 @@ label {
     color: gray;
 }
 
-.position{
+.splitSection{
     width: 80%;
     margin: auto;
+    display: flex;
+    max-width: 1000px;
+    height: 80vh;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 20px 100px rgb(0, 0, 0, 0.2);
+    border: 2px solid rgb(0, 0, 0, 0.4);
+    --main-purple: transparent;
+    --dark-purple: transparent;
+}
+
+
+/* POSITIONS */
+
+/* search bar */
+#searchBars{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+    padding: 5px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    opacity: .7;
+    border: 2px solid var(--transparent-border-color);
+    margin: 15px;
+    margin-right: 5px;
+    border-radius: 100px;
+}
+
+#searchBars input{
+    width: 100%;
+    font-family: 'Poppins';
+    font-size: 16px;
+    padding: 5px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+.splitSection::-webkit-scrollbar-thumb{
+    background:var(--transparent-border-color);
+}
+
+.sideSplit{
+    background-size: cover;
+}
+
+.position{
+    margin: 15px;
     max-width: 600px;
     border: 2px solid var(--transparent-border-color);
     padding: 25px;
     border-radius: 15px;
-    margin-bottom: 25px;
-    box-shadow: 0px 5px 20px var(--transparent-border-color);
+    /* margin-bottom: 25px; */
+    box-shadow: 0px 5px 20px rgb(0,0,0,0.1);
+    margin-right: 5px;
 }
 
 .position h2{
@@ -1072,32 +1182,31 @@ label {
 }
 
 .position div {
-    padding: 15px;
-    border: 2px solid var(--transparent-border-color);
-    border-radius: 15px;
-    background: var(--transparent-border-color);
     display: none;
     margin-top: 25px;
+    --main-purple:#9f30fd;
 }
 
 .toggleView{
-    background: var(--main-purple);
+    background: var(--transparent-border-color);
     width: fit-content;
     padding: 7px;
     padding-left: 15px;
     padding-right: 15px;
-    color: white;
+    color: inherit;
     border-radius: 11px;
     transition: .25s;
     cursor: pointer;
     font-family: 'Poppins';
     font-size: 16px;
-    border:none;
+    border: none;
+    margin-left: auto;
+    display: block;
 }
 
 .position a{
     background: var(--font-color);
-    width: fit-content;
+    text-align: center;
     padding: 15px;
     padding-left: 25px;
     padding-right: 25px;

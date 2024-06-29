@@ -40,12 +40,12 @@
         <!-- OPEN POSITIONS -->
         <div class="splitSection" data-aos="fade-up" data-aos-duration="600">
             <div class="sideSplit" style="width:50%;background-image:url('/static/assets/workplace.png')"></div>
-            <div style="width:65%; padding:10px">
+            <div id="rightSplit">
                 <div style="height: -webkit-fill-available;overflow: auto;">
                     <div id="searchBars">
-                        <img src="static/assets/svg/search.svg"><input id="roleSearch" placeholder="Role..."><img src="static/assets/svg/pin.svg"><input id="locationSearch" placeholder="Location...">
+                        <img src="static/assets/svg/search.svg"><input id="roleSearch" placeholder="Role..." oninput="updateSearch()"><img src="static/assets/svg/pin.svg"><input id="locationSearch" placeholder="Location..." oninput="updateSearch()">
                     </div>
-                    <div class="position">
+                    <div class="position" id="position1">
                         <h2>Hardware/Software Co-Design Engineer</h2>
                         <p class="loc">Houston, TX</p>
                         <button class="toggleView" id="toggleView1" onclick="toggleView(1)">View more information</button>
@@ -88,7 +88,7 @@
 
                     </div>
 
-                    <div class="position">
+                    <div class="position" id="position2">
                         <h2>Applied AI Product Data Scientist</h2>
                         <p class="loc">Houston, TX</p>
                         <button class="toggleView" id="toggleView2" onclick="toggleView(2)">View more information</button>
@@ -129,7 +129,7 @@
 
                     </div>
 
-                    <div class="position">
+                    <div class="position" id="position3">
                         <h2>Insider Risk Investigator</h2>
                         <p class="loc">Houston, TX</p>
                         <button class="toggleView" id="toggleView3" onclick="toggleView(3)">View more information</button>
@@ -172,7 +172,7 @@
 
                     </div>
                 
-                    <div class="position">
+                    <div class="position" id="position4">
                         <h2>Revenue Technology Product Manager</h2>
                         <p class="loc">Houston, TX</p>
                         <button class="toggleView" id="toggleView4" onclick="toggleView(4)">View more information</button>
@@ -213,7 +213,7 @@
 
                     </div>
 
-                    <div class="position">
+                    <div class="position" id="position5">
                         <h2>Analytics Engineer, Finance</h2>
                         <p class="loc">Houston, TX</p>
                         <button class="toggleView" id="toggleView5" onclick="toggleView(5)">View more information</button>
@@ -255,7 +255,7 @@
 
                     </div>
 
-                    <div class="position">
+                    <div class="position" id="position6">
                         <h2>Solutions Architect</h2>
                     
                         <p class="loc">Houston, TX</p>

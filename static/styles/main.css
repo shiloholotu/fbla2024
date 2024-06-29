@@ -804,6 +804,7 @@ select {
     margin:0;
     margin-bottom: 10px;
     margin-right: 50px;
+    color: rgb(42,41,85);
 }
 
 .review h3 span{
@@ -816,7 +817,7 @@ select {
     margin: 0;
     font-weight: 600;
     /* opacity: .5; */
-    background: var(--font-color);
+    background: rgb(42,41,85);
     width: fit-content;
     color: white;
     padding: 5px;
@@ -919,190 +920,7 @@ label {
 }
 
 
-@media only screen and (max-width: 950px) {
-    .review{
-        border-radius: 25px;
-    }
-
-    #pricingOptions{
-        display: block;
-        width: fit-content;
-        margin: auto;
-    }
-
-    #pricingOptions div{
-        margin-bottom: 20px;
-    }
-
-    #proOption{
-        transform:translate(0,0);
-    }
-
-    /* navbar */
-    #navbar{
-        display: none;
-    }
-
-    #mobileNavbar{
-        display: flex;
-    }
-
-    #burgerMenu{
-        display: grid;
-    }
-
-    /* landing page */
-    #landingSection div h1{
-        font-size: 50px;
-    }
-
-    #landingSection{
-        display: block;
-        width: 80%;
-        margin:auto;
-    }
-
-    #aiHand{
-        display: none;
-    }
-
-    #aiHandMobile{
-        width: 100% !important;
-        display: block;
-    }
-
-    /* slideshow */
-    #slideshow{display:block}
-    #slideshow div h1{
-        font-size: 50px;
-        line-height: 50px;
-        text-shadow: 0 0 100px rgb(255,255,255,0.4);
-    }
-    #slideshow img{
-        margin: auto;
-        display: block;
-        width: 100%;
-    }
-
-    /* benefits */
-
-    .companyInfo h1{
-        font-size: 50px;
-    }
-    #benefits{
-        display: block;
-        width: fit-content;
-    }
-
-    #benefits div{
-        margin: 0;
-        margin-bottom: 20px;
-        max-width: unset;
-        width: 80vw;
-    }
-
-    /* demo */
-    .demoPrompt{
-        display: block;
-        width: fit-content;
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 80%;
-    }
-    .dropdown{
-        display: block;
-        width: 100%;
-        margin-bottom: 15px;
-    }
-    #genButton{width: 100%;}
-
-    /* general */
-    .sectionHeader h1{
-        font-size: 50px !important;
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    /* footer */
-    #footer{
-        display:grid;
-    }
-
-    #footer div{
-        margin-bottom: 25px;
-    }
-
-    #logoColumn{
-        display: flex;
-        justify-content: center;
-    }
-}
-
-/* LOGIN CSS */
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 100000;
-}
-.container {
-    display: flex;
-    justify-content: center;
-    z-index: 100000;
-    width: max(30vw,400px);
-    padding: 16px;
-    background-color: var(--background-color);
-    border-radius: 4px;
-}
-.container input {
-    display: block;
-    font-family: "Poppins";
-    margin-bottom: 10px;
-    width: max(28vw,350px);
-    height: 12px;
-    padding: 10px;
-    border-radius: 12px;
-    border: 1px solid var(--transparent-border-color);
-    outline: none;
-}
-#closeModal {
-    cursor: pointer;
-}
-
-#loginButton {
-    margin:auto;
-    margin-top: 20px;
-    display: flex;
-    height: fit-content;
-    font-family: 'Poppins';
-    text-decoration: none;
-    padding: 8px;
-    width: fit-content;
-    font-size: 16px;
-    border-radius: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
-    background: var(--font-color);
-    color: var(--background-color);
-    border:none;
-    outline:none;
-    cursor: pointer;
-}  
-
-#closeModal {
-    margin-top: 10px;
-    font-family: 'Poppins';
-    text-decoration: none;
-    font-size: 16px;
-    color: gray;
-}
+/* POSITIONS */
 
 .splitSection{
     width: 80%;
@@ -1119,7 +937,7 @@ label {
 }
 
 
-/* POSITIONS */
+
 
 /* search bar */
 #searchBars{
@@ -1156,6 +974,11 @@ label {
 
 .sideSplit{
     background-size: cover;
+}
+
+#rightSplit{
+    width:65%;
+    padding:10px;
 }
 
 .position{
@@ -1242,3 +1065,156 @@ label {
     transform:translate(0,-2px);
     opacity: 1;
 }
+
+
+
+
+@media only screen and (max-width: 950px) {
+    .review{
+        border-radius: 25px;
+    }
+
+    #pricingOptions{
+        display: block;
+        width: fit-content;
+        margin: auto;
+    }
+
+    #pricingOptions div{
+        margin-bottom: 20px;
+    }
+
+    #proOption{
+        transform:translate(0,0);
+    }
+
+    /* navbar */
+    #navbar{
+        display: none;
+    }
+
+    #mobileNavbar{
+        display: flex;
+    }
+
+    #burgerMenu{
+        display: grid;
+    }
+
+    /* landing page */
+    #landingSection div h1{
+        font-size: 50px;
+    }
+
+    #landingSection{
+        display: block;
+        width: 80%;
+        margin:auto;
+    }
+
+    #aiHand{
+        display: none;
+    }
+
+    #aiHandMobile{
+        width: 100% !important;
+        display: block;
+    }
+
+    /* positions */
+    #rightSplit{
+        width:100%;
+        padding: 0;
+    }
+
+    .sideSplit{
+        display: none;
+    }
+
+    /* slideshow */
+    #slideshow{display:block}
+    #slideshow div h1{
+        font-size: 50px;
+        line-height: 50px;
+        text-shadow: 0 0 100px rgb(255,255,255,0.4);
+    }
+    #slideshow img{
+        margin: auto;
+        display: block;
+        width: 100%;
+    }
+
+    /* benefits */
+
+    .careersHeader{
+        display: block;
+    }
+
+    .careersHeader img{
+        width:80%;
+        margin:auto;
+        display: block;
+    }
+
+    .companyInfo h1{
+        font-size: 50px;
+    }
+    #benefits{
+        display: block !important;
+        width: fit-content !important;
+    }
+
+    #benefits div{
+        margin: 0 !important;
+        margin-bottom: 20px !important;
+        max-width: unset !important;
+        width: 80vw !important;
+    }
+
+    /* demo */
+    .demoPrompt{
+        display: block;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 80%;
+    }
+    .dropdown{
+        display: block;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    #genButton{width: 100%;}
+
+    /* about us */
+    .teamFace{
+        width: 100px;
+        height: 100px;
+        transform: none;
+    }
+
+    /* general */
+    .sectionHeader h1{
+        font-size: 50px !important;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* footer */
+    #footer{
+        display:grid;
+    }
+
+    #footer div{
+        margin-bottom: 25px;
+    }
+
+    #logoColumn{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+

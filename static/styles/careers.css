@@ -85,6 +85,7 @@
     border-radius: 14px;
     box-shadow: 0px 5px 20px var(--transparent-border-color);
     transition: .25s;
+    cursor: pointer;
 }
 
 #benefits div:hover {

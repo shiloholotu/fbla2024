@@ -18,6 +18,7 @@ function changeAnchor(){
 
 window.addEventListener('scroll', function() {
     const scrollButton = document.querySelector('.scroll-button');
+    if(scrollButton == null) return;
     var scrollPosition = window.scrollY;
 
     if(scrollPosition >= 2651){

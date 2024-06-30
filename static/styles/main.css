@@ -440,7 +440,7 @@ p .purpText{
     flex:1;
     margin-left: 10px;
     margin-right: 10px;
-    background:var(--font-color);
+    background:rgb(42,41,85);
     color:white;
     border: 2px solid transparent;
     transition: .5s;
@@ -488,7 +488,7 @@ p .purpText{
     transform: translate(70px, -30px);
     border: 2px solid rgb(255, 255, 255, 0.4);
     background: white;
-    color: var(--font-color);
+    color: rgb(42,41,85);
     font-weight: 600;
 }
 

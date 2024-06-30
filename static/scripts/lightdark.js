@@ -1,4 +1,3 @@
-console.log("hello")
 var r = document.querySelector(':root');
 
 function switchMode(){
